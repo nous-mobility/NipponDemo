@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="LifeBenefits.View.MasterPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+    xmlns:customControl="clr-namespace:LifeBenefits.CustomControl">
+    <ContentPage.Content>
+        <Grid BackgroundColor="Transparent">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid>
+                <Image Aspect="AspectFill" Source="bg.png" />
+                <StackLayout
+                    Padding="0,20,0,0"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand">
+                    <controls:CircleImage
+                        Aspect="AspectFill"
+                        BorderColor="White"
+                        BorderThickness="2"
+                        HeightRequest="85"
+                        Source="profileIcon.png"
+                        WidthRequest="85" />
+                    <Label
+                        FontSize="Large"
+                        Text="Nous Demo"
+                        TextColor="White" />
+                </StackLayout>
+            </Grid>
+            <StackLayout
+                Grid.Row="1"
+                Margin="10,20,10,0"
+                Spacing="15">
+                <ListView x:Name="navListView">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <customControl:ExtendedViewCell>
+                                <StackLayout Padding="10" Orientation="Horizontal">
+                                    <Label
+                                        Margin="10,0,0,0"
+                                        Text="{Binding Name}"
+                                        TextColor="Black"
+                                        VerticalTextAlignment="Center" />
+                                </StackLayout>
+                            </customControl:ExtendedViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

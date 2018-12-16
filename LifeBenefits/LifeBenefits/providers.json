@@ -1,0 +1,114 @@
+[
+  {
+    "name": "Quirno, Martin, MD",
+    "address": "281 Broadway 2nd Floor New York, NY 10007",
+    "phone": "(646) 596-7386",
+    "Type": "Medical",
+    "lat": "40.730610",
+    "long": "-73.935242"
+  },
+  {
+    "name": "Friedlander, Richard Paul, MD",
+    "address": "281 Broadway 2nd Floor New York, NY 10007",
+    "phone": "(212) 772-3111",
+    "Type": "Medical",
+    "lat": "40.730610",
+    "long": "-73.935242"
+  },
+  {
+    "name": "Palvia, Tanuj P., MD",
+    "address": "281 Broadway Suite 2F New York, NY 10007",
+    "phone": "(646) 596-7386",
+    "Type": "Medical",
+    "lat": "40.730610",
+    "long": "-73.935242"
+  },
+  {
+    "name": "Jean-Pierre, Patrick Duclos, MD",
+    "address": "281 Broadway 2nd Floor New York, NY 10007",
+    "phone": "(646) 596-7386",
+    "Type": "Medical",
+    "lat": "40.730610",
+    "long": "-73.935242"
+  },
+  {
+    "name": "Wert, Matthew A., MD",
+    "address": "281 Broadway 2nd Floor New York, NY 10007",
+    "phone": "(646) 596-7386",
+    "Type": "Medical",
+    "lat": "40.730610",
+    "long": "-73.935242"
+  },
+  {
+    "name": "Cortes, Raul A., MD",
+    "address": "281 Broadway 2nd Floor New York, NY 10007",
+    "phone": "(646) 596-7386",
+    "Type": "Medical",
+    "lat": "40.730610",
+    "long": "-73.935242"
+  },
+  {
+    "name": "Ravitz, Risa M., MD",
+    "address": "281 Broadway 2nd Floor New York, NY 10007",
+    "phone": "(646) 596-7386",
+    "Type": "Medical",
+    "lat": "40.730610",
+    "long": "-73.935242"
+  },
+  {
+    "name": "Kero, Danijela, DO",
+    "address": "15 Warren Street New York, NY 10007",
+    "phone": "(212) 226-7666",
+    "Type": "Medical",
+    "lat": "40.730610",
+    "long": "-73.935242"
+  },
+  {
+    "name": "Ibrahim, Nadwa, MD",
+    "address": "15 Warren Street New York, NY 10007",
+    "phone": "(212) 226-7666",
+    "Type": "Medical",
+    "lat": "40.730610",
+    "long": "-73.935242"
+  },
+  {
+    "name": "Schulwolf, Lauren B., MD",
+    "address": "15 Warren Street New York, NY 10007",
+    "phone": "(212) 226-7666",
+    "Type": "Medical",
+    "lat": "40.730610",
+    "long": "-73.935242"
+  },
+  {
+    "name": "Kollander, Steven A., DDS",
+    "address": "6083 Myrtle Avenue Ridgewood, NY 11385",
+    "phone": "(718) 497-2700",
+    "Type": "Dental",
+    "lat": "40.730610",
+    "long": "-73.935242"
+  },
+  {
+    "name": "Soliman, John, DDS",
+    "address": "2130 Hwy. 35 Suite 112 Sea Girt, NJ 08750",
+    "phone": "(732) 974-0680",
+    "Type": "Dental",
+    "lat": "40.730610",
+    "long": "-73.935242"
+  },
+  {
+    "name": "Soliman, John, DDS",
+    "address": "9 Hospital Drive Suite 6 Toms River, NJ 08755",
+    "phone": "(732) 286-1199",
+    "Type": "Dental",
+    "lat": "40.730610",
+    "long": "-73.935242"
+  },
+  {
+    "name": "Scott, Franklyn, DDS",
+    "address": "400 North Buckstown Road Suite 2A Langhorne, PA 19047",
+    "phone": "(215) 750-0200",
+    "Type": "Dental",
+    "lat": "40.730610",
+    "long": "-73.935242"
+  }
+]

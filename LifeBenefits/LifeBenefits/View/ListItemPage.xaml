@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="LifeBenefits.View.ListItemPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+    Title="Provider List">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+            Clicked="ToolbarItem_Clicked"
+            Icon="filter"
+            Text="filter" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <ListView
+                x:Name="list"
+                AbsoluteLayout.LayoutBounds="0,0,1,1"
+                AbsoluteLayout.LayoutFlags="All"
+                CachingStrategy="RecycleElement"
+                ItemTapped="list_ItemTapped"
+                RowHeight="85">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout
+                                Margin="8,0,8,0"
+                                BackgroundColor="Transparent"
+                                Orientation="Horizontal">
+                                <controls:CircleImage
+                                    Aspect="AspectFill"
+                                    BorderColor="White"
+                                    BorderThickness="1"
+                                    HeightRequest="50"
+                                    Source="profileIcon.png"
+                                    WidthRequest="50" />
+                                <StackLayout Margin="5,0,0,0" VerticalOptions="Center">
+                                    <Label
+                                        FontSize="18"
+                                        LineBreakMode="TailTruncation"
+                                        Text="{Binding Name}"
+                                        TextColor="Black" />
+                                    <StackLayout Orientation="Horizontal">
+                                        <Image
+                                            HeightRequest="15"
+                                            Source="phone"
+                                            WidthRequest="15" />
+                                        <Label
+                                            FontSize="15"
+                                            LineBreakMode="TailTruncation"
+                                            Text="{Binding Phone}"
+                                            TextColor="Gray" />
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Image
+                                            HeightRequest="20"
+                                            Source="marker"
+                                            WidthRequest="20" />
+                                        <Label
+                                            FontSize="12"
+                                            LineBreakMode="TailTruncation"
+                                            Text="{Binding Address}"
+                                            TextColor="Gray" />
+                                    </StackLayout>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <StackLayout
+                x:Name="filterPanel"
+                AbsoluteLayout.LayoutBounds="1,1,1,180"
+                AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional"
+                BackgroundColor="#ededed"
+                Spacing="0">
+                <StackLayout
+                    Padding="10"
+                    BackgroundColor="#dc3619"
+                    HorizontalOptions="FillAndExpand">
+                    <Label Text="Provider Type" TextColor="White" />
+                </StackLayout>
+                <ScrollView Padding="10">
+                    <StackLayout>
+                        <StackLayout Padding="5" Orientation="Horizontal">
+                            <Label
+                                FontSize="15"
+                                HorizontalOptions="StartAndExpand"
+                                Text="All"
+                                TextColor="Black" />
+                            <Image
+                                x:Name="allTick"
+                                HeightRequest="20"
+                                HorizontalOptions="EndAndExpand"
+                                Source="tick"
+                                WidthRequest="20" />
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="AllFilter_Tapped" />
+                            </StackLayout.GestureRecognizers>
+                        </StackLayout>
+                        <BoxView
+                            BackgroundColor="Gray"
+                            HeightRequest="0.5"
+                            HorizontalOptions="FillAndExpand" />
+                        <StackLayout Padding="5" Orientation="Horizontal">
+                            <Label
+                                FontSize="15"
+                                HorizontalOptions="StartAndExpand"
+                                Text="Medical"
+                                TextColor="Black" />
+                            <Image
+                                x:Name="medicalTick"
+                                HeightRequest="20"
+                                HorizontalOptions="EndAndExpand"
+                                Source="tick"
+                                WidthRequest="20" />
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="MedicalFilter_Tapped" />
+                            </StackLayout.GestureRecognizers>
+                        </StackLayout>
+                        <BoxView
+                            BackgroundColor="Gray"
+                            HeightRequest="0.5"
+                            HorizontalOptions="FillAndExpand" />
+                        <StackLayout Padding="5" Orientation="Horizontal">
+                            <Label
+                                FontSize="15"
+                                HorizontalOptions="StartAndExpand"
+                                Text="Dental"
+                                TextColor="Black" />
+                            <Image
+                                x:Name="dentalTick"
+                                HeightRequest="20"
+                                HorizontalOptions="EndAndExpand"
+                                Source="tick"
+                                WidthRequest="20" />
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="DentalFilter_Tapped" />
+                            </StackLayout.GestureRecognizers>
+                        </StackLayout>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
