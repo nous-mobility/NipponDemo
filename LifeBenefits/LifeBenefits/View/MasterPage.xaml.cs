@@ -10,7 +10,7 @@ namespace LifeBenefits.View
         List<NavItems> NavigationListItem = new List<NavItems>()
         {
             new NavItems(){ Name = "Home", IconName = "listIcon" },
-            new NavItems(){ Name = "Favourite", IconName = "infoIcon" },
+            new NavItems(){ Name = "Favourites", IconName = "infoIcon" },
             new NavItems(){ Name = "Settings", IconName = "contactIcon" },
             new NavItems(){ Name = "Logout", IconName = "logoutIcon" },
         };
