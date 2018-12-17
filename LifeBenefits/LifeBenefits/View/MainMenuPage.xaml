@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
     x:Class="LifeBenefits.View.MainMenuPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
@@ -18,10 +18,24 @@
                     Aspect="AspectFill"
                     AutomationId="ImgBackground"
                     Source="background.png" />
-                <BoxView
-                    AbsoluteLayout.LayoutBounds="0.1,0.1,10,10"
-                    AbsoluteLayout.LayoutFlags="PositionProportional"
-                    BackgroundColor="#dc3619" />
+                <BoxView 
+                    AbsoluteLayout.LayoutBounds="0,0,70,70" 
+                    AbsoluteLayout.LayoutFlags="PositionProportional">
+                    <BoxView.GestureRecognizers>
+                        <TapGestureRecognizer
+                Tapped="SimulateCrash"
+                NumberOfTapsRequired="2" />
+                    </BoxView.GestureRecognizers>
+                </BoxView>
+                <BoxView 
+                    AbsoluteLayout.LayoutBounds="1,0,70,70" 
+                    AbsoluteLayout.LayoutFlags="PositionProportional" >
+                    <BoxView.GestureRecognizers>
+                        <TapGestureRecognizer
+                Tapped="SimulateError"
+                NumberOfTapsRequired="2" />
+                    </BoxView.GestureRecognizers>
+                </BoxView>
             </AbsoluteLayout>
             <Grid Grid.Row="1">
                 <Grid.ColumnDefinitions>

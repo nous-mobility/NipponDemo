@@ -1,10 +1,6 @@
 ﻿using LifeBenefits.ViewModel;
+using Microsoft.AppCenter.Crashes;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -18,5 +14,22 @@ namespace LifeBenefits.View
 			InitializeComponent ();
             BindingContext = new MainMenuViewModel(this.Navigation);
 		}
-	}
+
+        void SimulateCrash(object sender, System.EventArgs e)
+        {
+            Crashes.GenerateTestCrash();
+        }
+
+        void SimulateError(object sender, System.EventArgs e)
+        {
+            try
+            {
+                throw new System.NullReferenceException();
+            }
+            catch (NullReferenceException ex)
+            {
+                Crashes.TrackError(ex);
+            }
+        }
+    }
 }
