@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="LifeBenefits.View.ContactUs"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Contact Us"
+    BackgroundColor="#f2f2f2">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Frame Padding="0" BackgroundColor="White">
+                <StackLayout>
+                    <StackLayout Padding="5,2,0,2" Orientation="Horizontal">
+                        <Image
+                            Margin="5,0,0,0"
+                            HeightRequest="15"
+                            Source="phone_black"
+                            WidthRequest="15" />
+                        <Label
+                            FontSize="16"
+                            HorizontalOptions="StartAndExpand"
+                            Text="Phone" />
+                        <Image
+                            Margin="0,0,5,0"
+                            HorizontalOptions="End"
+                            Source="plus" />
+                    </StackLayout>
+                    <BoxView BackgroundColor="#e8e8e8" HeightRequest="1" />
+                    <StackLayout Padding="5,2,0,2" Orientation="Horizontal">
+                        <Image
+                            Margin="5,0,0,0"
+                            HeightRequest="15"
+                            Source="email"
+                            WidthRequest="15" />
+                        <Label
+                            FontSize="16"
+                            HorizontalOptions="StartAndExpand"
+                            Text="Email" />
+                        <Image
+                            Margin="0,0,5,0"
+                            HorizontalOptions="End"
+                            Source="plus" />
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

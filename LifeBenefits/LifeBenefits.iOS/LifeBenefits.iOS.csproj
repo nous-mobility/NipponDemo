@@ -201,4 +201,13 @@
     <BundleResource Include="Resources\welllness.png" />
     <BundleResource Include="Resources\wellness.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\phone_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\plus.png" />
+  </ItemGroup>
 </Project>

@@ -17,7 +17,7 @@ namespace LifeBenefits.View
 
         void SimulateCrash(object sender, System.EventArgs e)
         {
-            Crashes.GenerateTestCrash();
+            //Crashes.GenerateTestCrash();
         }
 
         void SimulateError(object sender, System.EventArgs e)
@@ -28,7 +28,7 @@ namespace LifeBenefits.View
             }
             catch (NullReferenceException ex)
             {
-                Crashes.TrackError(ex);
+                //Crashes.TrackError(ex);
             }
         }
     }

@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="LifeBenefits.View.FindProvider"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Find a Provider"
+    BackgroundColor="#f2f2f2">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <StackLayout
+                Padding="8"
+                AbsoluteLayout.LayoutBounds="0,0,1,1"
+                AbsoluteLayout.LayoutFlags="All">
+                <StackLayout Margin="0,10,0,0" BackgroundColor="#fcfcfc">
+                    <StackLayout Padding="8" Spacing="20">
+                        <StackLayout Spacing="1">
+                            <Label Text="Network" TextColor="Black" />
+                            <Frame Padding="5" BackgroundColor="White">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label
+                                        FontSize="16"
+                                        HorizontalOptions="CenterAndExpand"
+                                        Text="Aetna Signature Administration (ASA)" />
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout Spacing="1">
+                            <Label Text="Provider Type" TextColor="Black" />
+                            <Frame Padding="5" BackgroundColor="White">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label
+                                        FontSize="16"
+                                        HorizontalOptions="CenterAndExpand"
+                                        Text="Select" />
+                                    <Image
+                                        Margin="0,0,5,0"
+                                        HeightRequest="18"
+                                        HorizontalOptions="End"
+                                        Source="plus"
+                                        WidthRequest="18" />
+                                    <StackLayout.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                                    </StackLayout.GestureRecognizers>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout Spacing="1">
+                            <Label Text="Location" TextColor="Black" />
+                            <Frame Padding="5" BackgroundColor="White">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label
+                                        FontSize="16"
+                                        HorizontalOptions="CenterAndExpand"
+                                        Text="Current Location" />
+                                    <Image
+                                        Margin="0,0,5,0"
+                                        HeightRequest="18"
+                                        HorizontalOptions="End"
+                                        Source="plus"
+                                        WidthRequest="18" />
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                        <Button
+                            Margin="0,10,0,0"
+                            Padding="0"
+                            BackgroundColor="#dc3619"
+                            Clicked="Button_Clicked"
+                            HeightRequest="25"
+                            HorizontalOptions="Center"
+                            Text="Search"
+                            TextColor="White" />
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+
+            <!--  Provider Type Filter Panel  -->
+            <StackLayout
+                x:Name="filterPanel"
+                AbsoluteLayout.LayoutBounds="1,1,1,180"
+                AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional"
+                BackgroundColor="#ededed"
+                Spacing="0">
+                <StackLayout
+                    Padding="10"
+                    BackgroundColor="#dc3619"
+                    HorizontalOptions="FillAndExpand">
+                    <Label Text="Provider Type" TextColor="White" />
+                </StackLayout>
+                <ScrollView Padding="10">
+                    <StackLayout>
+                        <StackLayout Padding="5" Orientation="Horizontal">
+                            <Label
+                                FontSize="15"
+                                HorizontalOptions="StartAndExpand"
+                                Text="All"
+                                TextColor="Black" />
+                            <Image
+                                x:Name="allTick"
+                                HeightRequest="20"
+                                HorizontalOptions="EndAndExpand"
+                                Source="tick"
+                                WidthRequest="20" />
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="AllFilter_Tapped" />
+                            </StackLayout.GestureRecognizers>
+                        </StackLayout>
+                        <BoxView
+                            BackgroundColor="Gray"
+                            HeightRequest="0.5"
+                            HorizontalOptions="FillAndExpand" />
+                        <StackLayout Padding="5" Orientation="Horizontal">
+                            <Label
+                                FontSize="15"
+                                HorizontalOptions="StartAndExpand"
+                                Text="Medical"
+                                TextColor="Black" />
+                            <Image
+                                x:Name="medicalTick"
+                                HeightRequest="20"
+                                HorizontalOptions="EndAndExpand"
+                                Source="tick"
+                                WidthRequest="20" />
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="MedicalFilter_Tapped" />
+                            </StackLayout.GestureRecognizers>
+                        </StackLayout>
+                        <BoxView
+                            BackgroundColor="Gray"
+                            HeightRequest="0.5"
+                            HorizontalOptions="FillAndExpand" />
+                        <StackLayout Padding="5" Orientation="Horizontal">
+                            <Label
+                                FontSize="15"
+                                HorizontalOptions="StartAndExpand"
+                                Text="Dental"
+                                TextColor="Black" />
+                            <Image
+                                x:Name="dentalTick"
+                                HeightRequest="20"
+                                HorizontalOptions="EndAndExpand"
+                                Source="tick"
+                                WidthRequest="20" />
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="DentalFilter_Tapped" />
+                            </StackLayout.GestureRecognizers>
+                        </StackLayout>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

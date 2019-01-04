@@ -20,28 +20,30 @@ namespace LifeBenefits.ViewModel
         #region CommandMethods
         private void GoToProviderPage(object obj)
         {
-            Analytics.TrackEvent("Launch Provider");
-            navigation.PushAsync(new ListItemPage());
+            //Analytics.TrackEvent("Launch Provider");
+            navigation.PushAsync(new FindProvider());
         }
         private void GoWellnessPortalPage(object obj)
         {
-            Analytics.TrackEvent("Launch Wellness Portal");
+            //Analytics.TrackEvent("Launch Wellness Portal");
         }
         private void GoToClaimActivityPage(object obj)
         {
-            Analytics.TrackEvent("Launch Claim Activity");
+            //Analytics.TrackEvent("Launch Claim Activity");
         }
         private void GoToBenefitsPage(object obj)
         {
-            Analytics.TrackEvent("Launch Benfits");
+            //Analytics.TrackEvent("Launch Benfits");
+            navigation.PushAsync(new BenefitsPage());
         }
         private void GoToIDCardPage(object obj)
         {
-            Analytics.TrackEvent("Launch ID Card");
+            //Analytics.TrackEvent("Launch ID Card");
         }
         private void GoToContactUsPage(object obj)
         {
-            Analytics.TrackEvent("Launch Contact Us");
+            //Analytics.TrackEvent("Launch Contact Us");
+            navigation.PushAsync(new ContactUs());
         }
         #endregion
         public MainMenuViewModel(INavigation navigation)
