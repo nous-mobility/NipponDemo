@@ -16,15 +16,17 @@
                 HorizontalOptions="Center"
                 Text="Email"
                 TextColor="White" />
-            <local:PinchToZoomContainer>
-                <local:PinchToZoomContainer.Content>
-                    <Image
-                        Aspect="AspectFill"
-                        HorizontalOptions="Center"
-                        Source="sampleIdCard.png"
-                        VerticalOptions="Center" />
-                </local:PinchToZoomContainer.Content>
-            </local:PinchToZoomContainer>
+            <ScrollView>
+                <local:PinchToZoomContainer>
+                    <local:PinchToZoomContainer.Content>
+                        <Image
+                            Aspect="AspectFill"
+                            HorizontalOptions="Center"
+                            Source="sampleIdCard.png"
+                            VerticalOptions="Center" />
+                    </local:PinchToZoomContainer.Content>
+                </local:PinchToZoomContainer>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
