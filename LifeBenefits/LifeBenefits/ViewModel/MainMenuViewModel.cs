@@ -39,6 +39,7 @@ namespace LifeBenefits.ViewModel
         private void GoToIDCardPage(object obj)
         {
             //Analytics.TrackEvent("Launch ID Card");
+            navigation.PushAsync(new IDCardPage());
         }
         private void GoToContactUsPage(object obj)
         {
