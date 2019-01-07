@@ -6,80 +6,236 @@
     BackgroundColor="#f2f2f2">
     <ContentPage.Content>
         <StackLayout Padding="10">
-            <Frame Padding="0" BackgroundColor="White">
-                <Grid RowSpacing="0">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*" />
-                        <RowDefinition Height="auto" />
-                    </Grid.RowDefinitions>
-                    <StackLayout
-                        Grid.Row="0"
-                        Padding="5,5,0,4"
-                        BackgroundColor="#e0e0e0"
-                        Orientation="Horizontal">
-                        <Label
-                            FontSize="16"
-                            HorizontalOptions="StartAndExpand"
-                            Text="Office"
-                            TextColor="Black" />
-                        <Image
-                            Margin="0,0,5,0"
-                            HeightRequest="18"
-                            HorizontalOptions="End"
-                            Source="plus"
-                            WidthRequest="18" />
-                        <StackLayout.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
-                        </StackLayout.GestureRecognizers>
-                    </StackLayout>
-                    <StackLayout
-                        x:Name="expandableList"
-                        Grid.Row="1"
-                        BackgroundColor="White">
-                        <StackLayout Padding="5,5,0,4" Orientation="Horizontal">
+            <ScrollView>
+
+                <Frame Padding="0" BackgroundColor="White">
+                    <Grid RowSpacing="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+
+                        </Grid.RowDefinitions>
+                        <StackLayout
+                            Grid.Row="0"
+                            Padding="10,5,0,4"
+                            BackgroundColor="#e0e0e0"
+                            Orientation="Horizontal">
                             <Label
                                 FontSize="16"
                                 HorizontalOptions="StartAndExpand"
-                                Text="Hospital"
+                                Text="Office"
                                 TextColor="Black" />
                             <Image
-                                Margin="0,0,5,0"
+                                x:Name="expnandImage"
+                                Margin="0,0,10,0"
                                 HeightRequest="18"
                                 HorizontalOptions="End"
-                                Source="plus"
+                                Source="minus"
                                 WidthRequest="18" />
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                            </StackLayout.GestureRecognizers>
                         </StackLayout>
-                        <BoxView BackgroundColor="#e8e8e8" HeightRequest="1" />
-                        <StackLayout Padding="5,2,0,4" Orientation="Horizontal">
-                            <Label
-                                FontSize="16"
-                                HorizontalOptions="StartAndExpand"
-                                Text="Pharmacy"
-                                TextColor="Black" />
-                            <Image
-                                Margin="0,0,5,0"
-                                HeightRequest="18"
-                                HorizontalOptions="End"
-                                Source="plus"
-                                WidthRequest="18" />
+                        <StackLayout
+                            x:Name="expandableList"
+                            Grid.Row="1"
+                            BackgroundColor="White"
+                            Spacing="0">
+                            <!--  First Row Data  -->
+                            <StackLayout
+                                Padding="10,5,0,4"
+                                BackgroundColor="#dc3619"
+                                Orientation="Horizontal">
+                                <Label
+                                    FontSize="16"
+                                    HorizontalOptions="StartAndExpand"
+                                    Text="Hospital"
+                                    TextColor="White" />
+                                <Label
+                                    Margin="0,0,5,0"
+                                    HorizontalOptions="End"
+                                    Text="Member pays"
+                                    TextColor="White" />
+                            </StackLayout>
+                            <StackLayout
+                                Padding="10,5,0,4"
+                                BackgroundColor="#f2f2f2"
+                                Orientation="Horizontal">
+                                <Label
+                                    FontSize="16"
+                                    HorizontalOptions="StartAndExpand"
+                                    Text="In-Network"
+                                    TextColor="Black" />
+                                <Label
+                                    Margin="0,0,5,0"
+                                    HorizontalOptions="End"
+                                    Text="0% after $200 deductable"
+                                    TextColor="Black" />
+                            </StackLayout>
+                            <StackLayout
+                                Padding="10,5,0,4"
+                                BackgroundColor="#dbdbdb"
+                                Orientation="Horizontal">
+                                <Label
+                                    FontSize="16"
+                                    HorizontalOptions="StartAndExpand"
+                                    Text="Out-of-Network"
+                                    TextColor="Black" />
+                                <Label
+                                    Margin="0,0,5,0"
+                                    HorizontalOptions="End"
+                                    Text="30% after 4200 deductable"
+                                    TextColor="Black" />
+                            </StackLayout>
+                            <!--  Second Row Data  -->
+                            <StackLayout
+                                Padding="10,5,0,4"
+                                BackgroundColor="#dc3619"
+                                Orientation="Horizontal">
+                                <Label
+                                    FontSize="16"
+                                    HorizontalOptions="StartAndExpand"
+                                    Text="Specialists"
+                                    TextColor="White" />
+                                <Label
+                                    Margin="0,0,5,0"
+                                    HorizontalOptions="End"
+                                    Text="Member pays"
+                                    TextColor="White" />
+                            </StackLayout>
+                            <StackLayout
+                                Padding="10,5,0,4"
+                                BackgroundColor="#f2f2f2"
+                                Orientation="Horizontal">
+                                <Label
+                                    FontSize="16"
+                                    HorizontalOptions="StartAndExpand"
+                                    Text="In-Network"
+                                    TextColor="Black" />
+                                <Label
+                                    Margin="0,0,5,0"
+                                    HorizontalOptions="End"
+                                    Text="0% after $200 deductable"
+                                    TextColor="Black" />
+                            </StackLayout>
+                            <StackLayout
+                                Padding="10,5,0,4"
+                                BackgroundColor="#dbdbdb"
+                                Orientation="Horizontal">
+                                <Label
+                                    FontSize="16"
+                                    HorizontalOptions="StartAndExpand"
+                                    Text="Out-of-Network"
+                                    TextColor="Black" />
+                                <Label
+                                    Margin="0,0,5,0"
+                                    HorizontalOptions="End"
+                                    Text="30% after 4200 deductable"
+                                    TextColor="Black" />
+                            </StackLayout>
+                            <!--  Third Row Data  -->
+                            <StackLayout
+                                Padding="10,5,0,4"
+                                BackgroundColor="#dc3619"
+                                Orientation="Horizontal">
+                                <Label
+                                    FontSize="16"
+                                    HorizontalOptions="StartAndExpand"
+                                    Text="Urgent Care"
+                                    TextColor="White" />
+                                <Label
+                                    Margin="0,0,5,0"
+                                    HorizontalOptions="End"
+                                    Text="Member pays"
+                                    TextColor="White" />
+                            </StackLayout>
+                            <StackLayout
+                                Padding="10,5,0,4"
+                                BackgroundColor="#f2f2f2"
+                                Orientation="Horizontal">
+                                <Label
+                                    FontSize="16"
+                                    HorizontalOptions="StartAndExpand"
+                                    Text="In-Network"
+                                    TextColor="Black" />
+                                <Label
+                                    Margin="0,0,5,0"
+                                    HorizontalOptions="End"
+                                    Text="0% after $200 deductable"
+                                    TextColor="Black" />
+                            </StackLayout>
+                            <StackLayout
+                                Padding="10,5,0,4"
+                                BackgroundColor="#dbdbdb"
+                                Orientation="Horizontal">
+                                <Label
+                                    FontSize="16"
+                                    HorizontalOptions="StartAndExpand"
+                                    Text="Out-of-Network"
+                                    TextColor="Black" />
+                                <Label
+                                    Margin="0,0,5,0"
+                                    HorizontalOptions="End"
+                                    Text="30% after 4200 deductable"
+                                    TextColor="Black" />
+                            </StackLayout>
                         </StackLayout>
-                        <BoxView BackgroundColor="#e8e8e8" HeightRequest="1" />
-                        <StackLayout Padding="5,2,0,4" Orientation="Horizontal">
-                            <Label
-                                FontSize="16"
-                                HorizontalOptions="StartAndExpand"
-                                Text="Accumulator Balances"
-                                TextColor="Black" />
-                            <Image
-                                Margin="0,0,5,0"
-                                HeightRequest="18"
-                                HorizontalOptions="End"
-                                Source="plus"
-                                WidthRequest="18" />
+                        <StackLayout Grid.Row="2">
+                            <StackLayout Padding="10,5,0,4" Orientation="Horizontal">
+                                <Label
+                                    FontSize="16"
+                                    HorizontalOptions="StartAndExpand"
+                                    Text="Hospital"
+                                    TextColor="Black" />
+                                <Image
+                                    Margin="0,0,10,0"
+                                    HeightRequest="18"
+                                    HorizontalOptions="End"
+                                    Source="plus"
+                                    WidthRequest="18" />
+                            </StackLayout>
+                            <BoxView BackgroundColor="#e8e8e8" HeightRequest="1" />
                         </StackLayout>
-                    </StackLayout>
-                </Grid>
-            </Frame>
+                        <StackLayout Grid.Row="3">
+                            <StackLayout Padding="10,2,0,4" Orientation="Horizontal">
+                                <Label
+                                    FontSize="16"
+                                    HorizontalOptions="StartAndExpand"
+                                    Text="Pharmacy"
+                                    TextColor="Black" />
+                                <Image
+                                    Margin="0,0,10,0"
+                                    HeightRequest="18"
+                                    HorizontalOptions="End"
+                                    Source="plus"
+                                    WidthRequest="18" />
+                            </StackLayout>
+                            <BoxView
+                                Grid.Row="3"
+                                BackgroundColor="#e8e8e8"
+                                HeightRequest="1" />
+                        </StackLayout>
+                        <StackLayout Grid.Row="4">
+                            <StackLayout Padding="10,2,0,4" Orientation="Horizontal">
+                                <Label
+                                    FontSize="16"
+                                    HorizontalOptions="StartAndExpand"
+                                    Text="Accumulator Balances"
+                                    TextColor="Black" />
+                                <Image
+                                    Margin="0,0,10,0"
+                                    HeightRequest="18"
+                                    HorizontalOptions="End"
+                                    Source="plus"
+                                    WidthRequest="18" />
+                            </StackLayout>
+                        </StackLayout>
+                    </Grid>
+                </Frame>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
