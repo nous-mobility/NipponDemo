@@ -26,7 +26,7 @@
                         WidthRequest="85" />
                     <Label
                         FontSize="Large"
-                        Text="Nous Demo"
+                        Text="John Doe"
                         TextColor="White" />
                 </StackLayout>
             </Grid>
@@ -49,6 +49,12 @@
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
+                <Label
+                    Margin="0,0,0,10"
+                    HorizontalOptions="CenterAndExpand"
+                    Text="v 1.1"
+                    TextColor="Gray"
+                    VerticalOptions="End" />
             </StackLayout>
         </Grid>
     </ContentPage.Content>
