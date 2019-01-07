@@ -29,6 +29,7 @@
                             <Frame Padding="5" BackgroundColor="White">
                                 <StackLayout Orientation="Horizontal">
                                     <Label
+                                        x:Name="selectedText"
                                         FontSize="16"
                                         HorizontalOptions="CenterAndExpand"
                                         Text="Select" />

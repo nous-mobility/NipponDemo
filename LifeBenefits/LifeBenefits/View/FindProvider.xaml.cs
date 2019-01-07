@@ -54,6 +54,8 @@ namespace LifeBenefits.View
             medicalTick.IsVisible = false;
             dentalTick.IsVisible = false;
             selectedFilterType = "All";
+            selectedText.Text = selectedFilterType;
+            filterStatus = false;
         }
         private void MedicalFilter_Tapped(object sender, EventArgs e)
         {
@@ -62,6 +64,8 @@ namespace LifeBenefits.View
             medicalTick.IsVisible = true;
             dentalTick.IsVisible = false;
             selectedFilterType = "Medical";
+            selectedText.Text = selectedFilterType;
+            filterStatus = false;
         }
         private void DentalFilter_Tapped(object sender, EventArgs e)
         {
@@ -70,6 +74,8 @@ namespace LifeBenefits.View
             medicalTick.IsVisible = false;
             dentalTick.IsVisible = true;
             selectedFilterType = "Dental";
+            selectedText.Text = selectedFilterType;
+            filterStatus = false;
         }
     }
 }
