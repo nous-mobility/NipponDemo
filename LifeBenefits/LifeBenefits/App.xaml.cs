@@ -15,11 +15,12 @@ namespace LifeBenefits
         {
             InitializeComponent();
 
-            MainPage = new MasterDetailPage()
-            {
-                Master = new MasterPage() { Title = "Nippon",Icon = "slideout.png"},
-                Detail = new NavigationPage(new MainMenuPage())
-            };
+            //MainPage = new MasterDetailPage()
+            //{
+            //    Master = new MasterPage() { Title = "Nippon",Icon = "slideout.png"},
+            //    Detail = new NavigationPage(new MainMenuPage())
+            //};
+            MainPage = new NavigationPage(new LoginPage());
         }
 
         protected override void OnStart()

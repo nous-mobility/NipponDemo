@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="LifeBenefits.View.LoginPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:Converters="clr-namespace:LifeBenefits.Converters;assembly=LifeBenefits"
+    xmlns:xe="clr-namespace:XamEffects;assembly=XamEffects"
+    Title="Nippon Life Benefits">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Converters:InverseBooleanConverter x:Key="InverseBooleanConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*" />
+                <RowDefinition Height="4.6*" />
+                <RowDefinition Height="1.4*" />
+            </Grid.RowDefinitions>
+            <Image
+                Grid.Row="0"
+                Aspect="AspectFill"
+                Source="background.png" />
+            <StackLayout Grid.Row="1">
+                <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+                    <Frame
+                        Margin="20,0,20,0"
+                        BackgroundColor="#f2f2f2"
+                        CornerRadius="5"
+                        IsVisible="{Binding IsPinViewVisible, Converter={StaticResource InverseBooleanConverter}}">
+                        <StackLayout>
+                            <Label HorizontalOptions="CenterAndExpand" Text="Member Login" />
+                            <Entry Placeholder="User ID" />
+                            <Entry IsPassword="True" Placeholder="Password" />
+                            <Button
+                                Margin="0,10,0,0"
+                                Padding="0"
+                                BackgroundColor="#a5a6a5"
+                                Command="{Binding OnLoginButtonClick}"
+                                HeightRequest="30"
+                                HorizontalOptions="FillAndExpand"
+                                IsVisible="{Binding IsBusy, Converter={StaticResource InverseBooleanConverter}}"
+                                Text="Login"
+                                TextColor="White" />
+                            <Frame
+                                x:Name="loginProgress"
+                                Margin="0,10,0,0"
+                                Padding="2"
+                                BackgroundColor="#a5a6a5"
+                                HasShadow="False"
+                                HeightRequest="28"
+                                HorizontalOptions="FillAndExpand"
+                                IsVisible="{Binding IsBusy}">
+                                <ActivityIndicator IsRunning="True" Color="White" />
+                            </Frame>
+                            <StackLayout HorizontalOptions="CenterAndExpand" Spacing="1">
+                                <Label Text="New User Registration" />
+                                <BoxView
+                                    BackgroundColor="#a5a6a5"
+                                    HeightRequest="1"
+                                    HorizontalOptions="FillAndExpand" />
+                            </StackLayout>
+                            <StackLayout HorizontalOptions="CenterAndExpand" Spacing="1">
+                                <Label Text="Forgot User ID or Password" />
+                                <BoxView
+                                    BackgroundColor="#a5a6a5"
+                                    HeightRequest="1"
+                                    HorizontalOptions="FillAndExpand" />
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                    <Frame
+                        Margin="20,0,20,0"
+                        BackgroundColor="#f2f2f2"
+                        CornerRadius="5"
+                        IsVisible="{Binding IsPinViewVisible}">
+                        <StackLayout>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Frame
+                                    Grid.Column="0"
+                                    Padding="5"
+                                    HasShadow="False">
+                                    <Entry HorizontalOptions="Center" Text="5" />
+                                </Frame>
+                                <Frame
+                                    Grid.Column="1"
+                                    Padding="5"
+                                    HasShadow="False">
+                                    <Entry HorizontalOptions="Center" Text="2" />
+                                </Frame>
+                                <Frame
+                                    Grid.Column="2"
+                                    Padding="5"
+                                    HasShadow="False">
+                                    <Entry HorizontalOptions="Center" Text="4" />
+                                </Frame>
+                                <Frame
+                                    Grid.Column="3"
+                                    Padding="5"
+                                    HasShadow="False">
+                                    <Entry HorizontalOptions="Center" Text="1" />
+                                </Frame>
+                            </Grid>
+                            <Button
+                                Margin="0,10,0,0"
+                                Padding="0"
+                                BackgroundColor="#dc3619"
+                                Command="{Binding OnConfirmButtonClick}"
+                                HeightRequest="30"
+                                HorizontalOptions="FillAndExpand"
+                                IsVisible="{Binding IsBusy, Converter={StaticResource InverseBooleanConverter}}"
+                                Text="Confirm"
+                                TextColor="White" />
+                            <Button
+                                Margin="0,10,0,0"
+                                Padding="0"
+                                BackgroundColor="#a5a6a5"
+                                Command="{Binding OnBackButtonClick}"
+                                HeightRequest="30"
+                                HorizontalOptions="FillAndExpand"
+                                IsVisible="{Binding IsBusy, Converter={StaticResource InverseBooleanConverter}}"
+                                Text="Back"
+                                TextColor="White" />
+                        </StackLayout>
+                    </Frame>
+                </Grid>
+            </StackLayout>
+            <Grid Grid.Row="2" ColumnSpacing="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <StackLayout
+                    Grid.Column="0"
+                    Padding="0,10,0,5"
+                    xe:Commands.Tap="{Binding OnFindProviderClick}"
+                    xe:TouchEffect.Color="Red"
+                    BackgroundColor="#a5a6a5">
+                    <Image
+                        HeightRequest="48"
+                        Source="doc"
+                        WidthRequest="48" />
+                    <Label
+                        AutomationId="LblFindProvider"
+                        HorizontalOptions="Center"
+                        Text="Find a Provider"
+                        TextColor="White"
+                        VerticalOptions="End" />
+                </StackLayout>
+                <StackLayout
+                    Grid.Column="1"
+                    Padding="0,10,0,5"
+                    xe:Commands.Tap="{Binding OnContactUsClick}"
+                    xe:TouchEffect.Color="Red"
+                    BackgroundColor="#a5a6a5">
+                    <Image
+                        HeightRequest="48"
+                        Source="contact"
+                        WidthRequest="48" />
+                    <Label
+                        AutomationId="LblContactUs"
+                        HorizontalOptions="Center"
+                        Text="Contact Us"
+                        TextColor="White"
+                        VerticalOptions="End" />
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
