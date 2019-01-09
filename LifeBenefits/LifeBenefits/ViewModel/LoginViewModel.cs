@@ -78,12 +78,12 @@ namespace LifeBenefits.ViewModel
         }
         private void ConfirmPinCode(object obj)
         {
-            //var mainPage = new MasterDetailPage()
-            //{
-            //    Master = new MasterPage() { Title = "Nippon", Icon = "slideout.png" },
-            //    Detail = new NavigationPage(new MainMenuPage())
-            //};
-            //Application.Current.MainPage = mainPage;
+            var mainPage = new MasterDetailPage()
+            {
+                Master = new MasterPage() { Title = "Nippon", Icon = "slideout.png" },
+                Detail = new NavigationPage(new MainMenuPage())
+            };
+            Application.Current.MainPage = mainPage;
         }
         private void GoBackToLoginFrame(object obj)
         {

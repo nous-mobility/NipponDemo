@@ -89,47 +89,65 @@
                                     Grid.Column="0"
                                     Padding="5"
                                     HasShadow="False">
-                                    <Entry HorizontalOptions="Center" Text="5" />
+                                    <Entry
+                                        FontSize="Large"
+                                        HorizontalOptions="Center"
+                                        IsPassword="True"
+                                        Text="5" />
                                 </Frame>
                                 <Frame
                                     Grid.Column="1"
                                     Padding="5"
                                     HasShadow="False">
-                                    <Entry HorizontalOptions="Center" Text="2" />
+                                    <Entry
+                                        FontSize="Large"
+                                        HorizontalOptions="Center"
+                                        IsPassword="True"
+                                        Text="2" />
                                 </Frame>
                                 <Frame
                                     Grid.Column="2"
                                     Padding="5"
                                     HasShadow="False">
-                                    <Entry HorizontalOptions="Center" Text="4" />
+                                    <Entry
+                                        FontSize="Large"
+                                        HorizontalOptions="Center"
+                                        IsPassword="True"
+                                        Text="4" />
                                 </Frame>
                                 <Frame
                                     Grid.Column="3"
                                     Padding="5"
                                     HasShadow="False">
-                                    <Entry HorizontalOptions="Center" Text="1" />
+                                    <Entry
+                                        FontSize="Large"
+                                        HorizontalOptions="Center"
+                                        IsPassword="True"
+                                        Text="1" />
                                 </Frame>
                             </Grid>
-                            <Button
+                            <StackLayout
                                 Margin="0,10,0,0"
-                                Padding="0"
-                                BackgroundColor="#dc3619"
-                                Command="{Binding OnConfirmButtonClick}"
-                                HeightRequest="30"
-                                HorizontalOptions="FillAndExpand"
-                                IsVisible="{Binding IsBusy, Converter={StaticResource InverseBooleanConverter}}"
-                                Text="Confirm"
-                                TextColor="White" />
-                            <Button
-                                Margin="0,10,0,0"
-                                Padding="0"
-                                BackgroundColor="#a5a6a5"
-                                Command="{Binding OnBackButtonClick}"
-                                HeightRequest="30"
-                                HorizontalOptions="FillAndExpand"
-                                IsVisible="{Binding IsBusy, Converter={StaticResource InverseBooleanConverter}}"
-                                Text="Back"
-                                TextColor="White" />
+                                HorizontalOptions="CenterAndExpand"
+                                Orientation="Horizontal"
+                                VerticalOptions="Center">
+                                <Button
+                                    Padding="0"
+                                    BackgroundColor="#a5a6a5"
+                                    Command="{Binding OnBackButtonClick}"
+                                    HeightRequest="30"
+                                    IsVisible="{Binding IsBusy, Converter={StaticResource InverseBooleanConverter}}"
+                                    Text="Back"
+                                    TextColor="White" />
+                                <Button
+                                    Padding="0"
+                                    BackgroundColor="#dc3619"
+                                    Command="{Binding OnConfirmButtonClick}"
+                                    HeightRequest="30"
+                                    IsVisible="{Binding IsBusy, Converter={StaticResource InverseBooleanConverter}}"
+                                    Text="Confirm"
+                                    TextColor="White" />
+                            </StackLayout>
                         </StackLayout>
                     </Frame>
                 </Grid>
