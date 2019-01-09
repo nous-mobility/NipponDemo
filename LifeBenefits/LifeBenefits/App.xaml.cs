@@ -2,7 +2,6 @@
 using Microsoft.AppCenter;
 using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
-using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -14,12 +13,6 @@ namespace LifeBenefits
         public App()
         {
             InitializeComponent();
-
-            //MainPage = new MasterDetailPage()
-            //{
-            //    Master = new MasterPage() { Title = "Nippon",Icon = "slideout.png"},
-            //    Detail = new NavigationPage(new MainMenuPage())
-            //};
             MainPage = new NavigationPage(new LoginPage());
         }
 
