@@ -140,21 +140,33 @@
                                 Spacing="10"
                                 VerticalOptions="Center">
                                 <Button
-                                    Padding="0"
                                     BackgroundColor="#a5a6a5"
                                     Command="{Binding OnBackButtonClick}"
                                     HeightRequest="30"
                                     IsVisible="{Binding IsBusy, Converter={StaticResource InverseBooleanConverter}}"
                                     Text="Back"
-                                    TextColor="White" />
+                                    TextColor="White">
+                                    <Button.Padding>
+                                        <OnPlatform x:TypeArguments="Thickness">
+                                            <On Platform="Android" Value="0" />
+                                            <On Platform="iOS" Value="10, 2, 10, 2" />
+                                        </OnPlatform>
+                                    </Button.Padding>
+                                </Button>
                                 <Button
-                                    Padding="0"
                                     BackgroundColor="#dc3619"
                                     Command="{Binding OnConfirmButtonClick}"
                                     HeightRequest="30"
                                     IsVisible="{Binding IsBusy, Converter={StaticResource InverseBooleanConverter}}"
                                     Text="Confirm"
-                                    TextColor="White" />
+                                    TextColor="White">
+                                    <Button.Padding>
+                                        <OnPlatform x:TypeArguments="Thickness">
+                                            <On Platform="Android" Value="0" />
+                                            <On Platform="iOS" Value="5, 2, 5, 2" />
+                                        </OnPlatform>
+                                    </Button.Padding>
+                                </Button>
                             </StackLayout>
                         </StackLayout>
                     </Frame>

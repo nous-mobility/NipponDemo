@@ -13,7 +13,7 @@ namespace LifeBenefits.View
 		{
 			InitializeComponent ();
             BindingContext = new MainMenuViewModel(this.Navigation);
-		}
+        }
 
         void SimulateCrash(object sender, System.EventArgs e)
         {

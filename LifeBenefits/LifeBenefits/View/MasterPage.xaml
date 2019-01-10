@@ -12,7 +12,7 @@
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <Grid>
-                <Image Aspect="AspectFill" Source="bg.png" />
+                <Image Aspect="AspectFill" Source="bg.jpg" />
                 <StackLayout
                     Padding="0,20,0,0"
                     HorizontalOptions="CenterAndExpand"
@@ -34,7 +34,7 @@
                 Grid.Row="1"
                 Margin="10,20,10,0"
                 Spacing="15">
-                <ListView x:Name="navListView">
+                <ListView x:Name="navListView" SeparatorVisibility="None">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <customControl:ExtendedViewCell>
