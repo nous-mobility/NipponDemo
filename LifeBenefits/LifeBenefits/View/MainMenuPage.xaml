@@ -18,22 +18,14 @@
                     Aspect="AspectFill"
                     AutomationId="ImgBackground"
                     Source="background.png" />
-                <BoxView 
-                    AbsoluteLayout.LayoutBounds="0,0,70,70" 
-                    AbsoluteLayout.LayoutFlags="PositionProportional">
+                <BoxView AbsoluteLayout.LayoutBounds="0,0,70,70" AbsoluteLayout.LayoutFlags="PositionProportional">
                     <BoxView.GestureRecognizers>
-                        <TapGestureRecognizer
-                Tapped="SimulateCrash"
-                NumberOfTapsRequired="2" />
+                        <TapGestureRecognizer NumberOfTapsRequired="2" Tapped="SimulateCrash" />
                     </BoxView.GestureRecognizers>
                 </BoxView>
-                <BoxView 
-                    AbsoluteLayout.LayoutBounds="1,0,70,70" 
-                    AbsoluteLayout.LayoutFlags="PositionProportional" >
+                <BoxView AbsoluteLayout.LayoutBounds="1,0,70,70" AbsoluteLayout.LayoutFlags="PositionProportional">
                     <BoxView.GestureRecognizers>
-                        <TapGestureRecognizer
-                Tapped="SimulateError"
-                NumberOfTapsRequired="2" />
+                        <TapGestureRecognizer NumberOfTapsRequired="2" Tapped="SimulateError" />
                     </BoxView.GestureRecognizers>
                 </BoxView>
             </AbsoluteLayout>
@@ -55,16 +47,18 @@
                     xe:Commands.Tap="{Binding OnFindProviderClick}"
                     xe:TouchEffect.Color="Red"
                     BackgroundColor="#a5a6a5">
-                    <Image
-                        HeightRequest="48"
-                        Source="doc"
-                        WidthRequest="48" />
-                    <Label
-                        AutomationId="LblFindProvider"
-                        HorizontalOptions="Center"
-                        Text="Find a Provider"
-                        TextColor="White"
-                        VerticalOptions="End" />
+                    <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                        <Image
+                            HeightRequest="48"
+                            Source="doc"
+                            WidthRequest="48" />
+                        <Label
+                            AutomationId="LblFindProvider"
+                            HorizontalOptions="Center"
+                            Text="Find a Provider"
+                            TextColor="White"
+                            VerticalOptions="End" />
+                    </StackLayout>
                 </StackLayout>
                 <StackLayout
                     Grid.Row="0"
@@ -73,16 +67,18 @@
                     xe:Commands.Tap="{Binding OnWellnessPortalClick}"
                     xe:TouchEffect.Color="Red"
                     BackgroundColor="#a5a6a5">
-                    <Image
-                        HeightRequest="48"
-                        Source="welllness"
-                        WidthRequest="48" />
-                    <Label
-                        AutomationId="LblWellnessPortal"
-                        HorizontalOptions="Center"
-                        Text="Wellness Portal"
-                        TextColor="White"
-                        VerticalOptions="End" />
+                    <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                        <Image
+                            HeightRequest="48"
+                            Source="welllness"
+                            WidthRequest="48" />
+                        <Label
+                            AutomationId="LblWellnessPortal"
+                            HorizontalOptions="Center"
+                            Text="Wellness Portal"
+                            TextColor="White"
+                            VerticalOptions="End" />
+                    </StackLayout>
                 </StackLayout>
                 <StackLayout
                     Grid.Row="1"
@@ -91,16 +87,18 @@
                     xe:Commands.Tap="{Binding OnClaimActivityClick}"
                     xe:TouchEffect.Color="Red"
                     BackgroundColor="#a5a6a5">
-                    <Image
-                        HeightRequest="48"
-                        Source="claim"
-                        WidthRequest="48" />
-                    <Label
-                        AutomationId="LblClaimActivity"
-                        HorizontalOptions="Center"
-                        Text="Claim Activity"
-                        TextColor="White"
-                        VerticalOptions="End" />
+                    <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                        <Image
+                            HeightRequest="48"
+                            Source="claim"
+                            WidthRequest="48" />
+                        <Label
+                            AutomationId="LblClaimActivity"
+                            HorizontalOptions="Center"
+                            Text="Claim Activity"
+                            TextColor="White"
+                            VerticalOptions="End" />
+                    </StackLayout>
                 </StackLayout>
                 <StackLayout
                     Grid.Row="1"
@@ -109,16 +107,18 @@
                     xe:Commands.Tap="{Binding OnBenefitsClick}"
                     xe:TouchEffect.Color="Red"
                     BackgroundColor="#a5a6a5">
-                    <Image
-                        HeightRequest="48"
-                        Source="benifits"
-                        WidthRequest="48" />
-                    <Label
-                        AutomationId="LblBenefits"
-                        HorizontalOptions="Center"
-                        Text="Benefits"
-                        TextColor="White"
-                        VerticalOptions="End" />
+                    <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                        <Image
+                            HeightRequest="48"
+                            Source="benifits"
+                            WidthRequest="48" />
+                        <Label
+                            AutomationId="LblBenefits"
+                            HorizontalOptions="Center"
+                            Text="Benefits"
+                            TextColor="White"
+                            VerticalOptions="End" />
+                    </StackLayout>
                 </StackLayout>
                 <StackLayout
                     Grid.Row="2"
@@ -127,16 +127,18 @@
                     xe:Commands.Tap="{Binding OnIDCardClick}"
                     xe:TouchEffect.Color="Red"
                     BackgroundColor="#a5a6a5">
-                    <Image
-                        HeightRequest="48"
-                        Source="idcard"
-                        WidthRequest="48" />
-                    <Label
-                        AutomationId="LblIdCard"
-                        HorizontalOptions="Center"
-                        Text="ID Card"
-                        TextColor="White"
-                        VerticalOptions="End" />
+                    <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                        <Image
+                            HeightRequest="48"
+                            Source="idcard"
+                            WidthRequest="48" />
+                        <Label
+                            AutomationId="LblIdCard"
+                            HorizontalOptions="Center"
+                            Text="ID Card"
+                            TextColor="White"
+                            VerticalOptions="End" />
+                    </StackLayout>
                 </StackLayout>
                 <StackLayout
                     Grid.Row="2"
@@ -145,16 +147,18 @@
                     xe:Commands.Tap="{Binding OnContactUsClick}"
                     xe:TouchEffect.Color="Red"
                     BackgroundColor="#a5a6a5">
-                    <Image
-                        HeightRequest="48"
-                        Source="contact"
-                        WidthRequest="48" />
-                    <Label
-                        AutomationId="LblContactUs"
-                        HorizontalOptions="Center"
-                        Text="Contact Us"
-                        TextColor="White"
-                        VerticalOptions="End" />
+                    <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                        <Image
+                            HeightRequest="48"
+                            Source="contact"
+                            WidthRequest="48" />
+                        <Label
+                            AutomationId="LblContactUs"
+                            HorizontalOptions="Center"
+                            Text="Contact Us"
+                            TextColor="White"
+                            VerticalOptions="End" />
+                    </StackLayout>
                 </StackLayout>
             </Grid>
         </Grid>

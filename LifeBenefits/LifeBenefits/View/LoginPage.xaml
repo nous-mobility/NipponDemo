@@ -36,8 +36,11 @@
                                 FontSize="15"
                                 HorizontalOptions="CenterAndExpand"
                                 Text="Member Login" />
-                            <Entry Placeholder="User ID" />
-                            <Entry IsPassword="True" Placeholder="Password" />
+                            <Entry Placeholder="User ID" Text="john.doe@info.com" />
+                            <Entry
+                                IsPassword="True"
+                                Placeholder="Password"
+                                Text="123456789" />
                             <Button
                                 Margin="0,10,0,0"
                                 Padding="0"
@@ -183,16 +186,18 @@
                     xe:Commands.Tap="{Binding OnFindProviderClick}"
                     xe:TouchEffect.Color="Red"
                     BackgroundColor="#a5a6a5">
-                    <Image
-                        HeightRequest="48"
-                        Source="doc"
-                        WidthRequest="48" />
-                    <Label
-                        AutomationId="LblFindProvider"
-                        HorizontalOptions="Center"
-                        Text="Find a Provider"
-                        TextColor="White"
-                        VerticalOptions="End" />
+                    <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                        <Image
+                            HeightRequest="48"
+                            Source="doc"
+                            WidthRequest="48" />
+                        <Label
+                            AutomationId="LblFindProvider"
+                            HorizontalOptions="Center"
+                            Text="Find a Provider"
+                            TextColor="White"
+                            VerticalOptions="End" />
+                    </StackLayout>
                 </StackLayout>
                 <StackLayout
                     Grid.Column="1"
@@ -200,16 +205,18 @@
                     xe:Commands.Tap="{Binding OnContactUsClick}"
                     xe:TouchEffect.Color="Red"
                     BackgroundColor="#a5a6a5">
-                    <Image
-                        HeightRequest="48"
-                        Source="contact"
-                        WidthRequest="48" />
-                    <Label
-                        AutomationId="LblContactUs"
-                        HorizontalOptions="Center"
-                        Text="Contact Us"
-                        TextColor="White"
-                        VerticalOptions="End" />
+                    <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                        <Image
+                            HeightRequest="48"
+                            Source="contact"
+                            WidthRequest="48" />
+                        <Label
+                            AutomationId="LblContactUs"
+                            HorizontalOptions="Center"
+                            Text="Contact Us"
+                            TextColor="White"
+                            VerticalOptions="End" />
+                    </StackLayout>
                 </StackLayout>
             </Grid>
         </Grid>
