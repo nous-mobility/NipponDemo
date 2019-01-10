@@ -34,7 +34,10 @@
                 Grid.Row="1"
                 Margin="10,20,10,0"
                 Spacing="15">
-                <ListView x:Name="navListView" SeparatorVisibility="None">
+                <ListView
+                    x:Name="navListView"
+                    ItemTapped="navListView_ItemTapped"
+                    SeparatorVisibility="None">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <customControl:ExtendedViewCell>

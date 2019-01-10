@@ -20,29 +20,22 @@ namespace LifeBenefits.View
             navListView.ItemsSource = NavigationListItem;
         }
 
-        //private void navListView_ItemTapped(object sender, ItemTappedEventArgs e)
-        //{
-        //    var mdp = (Application.Current.MainPage as MasterDetailPage);
-        //    var navPage = mdp.Detail as NavigationPage;
+        private void navListView_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            var mdp = (Application.Current.MainPage as MasterDetailPage);
+            var navPage = mdp.Detail as NavigationPage;
 
-        //    var item = e.Item as NavItems;
+            var item = e.Item as NavItems;
 
-        //    mdp.IsPresented = false;
+            mdp.IsPresented = false;
 
-        //    switch (item.Name)
-        //    {
-        //        case "Provider List":
-        //            navPage.PushAsync(new ListItemPage());
-        //            break;
-        //        case "Details":
-        //            navPage.PushAsync(new ItemDetailPage());
-        //            break;
-        //        case "Contacts":
-        //            break;
-        //        case "Logout":
-        //            break;
-        //    }
-        //}
+            switch (item.Name)
+            {
+                case "Logout":
+                    Application.Current.MainPage = new NavigationPage(new LoginPage());
+                    break;
+            }
+        }
     }
 
     public class NavItems
