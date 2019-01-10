@@ -74,9 +74,19 @@ namespace LifeBenefits.ViewModel
             IsBusy = true;
             await Task.Delay(3000);
             IsBusy = false;
+
+            //Without Pin Code Authentication Navigate to MainPage
+            //NavigateToMainPage();
+
+            //Navigate to MainPage after Pin Code Authentication
             IsPinViewVisible = true;
         }
         private void ConfirmPinCode(object obj)
+        {
+            NavigateToMainPage();
+        }
+
+        private void NavigateToMainPage()
         {
             var mainPage = new MasterDetailPage()
             {
