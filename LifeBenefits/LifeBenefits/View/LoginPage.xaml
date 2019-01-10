@@ -32,7 +32,10 @@
                         CornerRadius="5"
                         IsVisible="{Binding IsPinViewVisible, Converter={StaticResource InverseBooleanConverter}}">
                         <StackLayout>
-                            <Label HorizontalOptions="CenterAndExpand" Text="Member Login" />
+                            <Label
+                                FontSize="15"
+                                HorizontalOptions="CenterAndExpand"
+                                Text="Member Login" />
                             <Entry Placeholder="User ID" />
                             <Entry IsPassword="True" Placeholder="Password" />
                             <Button
@@ -77,7 +80,11 @@
                         BackgroundColor="#f2f2f2"
                         CornerRadius="5"
                         IsVisible="{Binding IsPinViewVisible}">
-                        <StackLayout>
+                        <StackLayout Spacing="20">
+                            <Label
+                                FontSize="15"
+                                HorizontalOptions="CenterAndExpand"
+                                Text="Enter Pin" />
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*" />
@@ -130,6 +137,7 @@
                                 Margin="0,10,0,0"
                                 HorizontalOptions="CenterAndExpand"
                                 Orientation="Horizontal"
+                                Spacing="10"
                                 VerticalOptions="Center">
                                 <Button
                                     Padding="0"

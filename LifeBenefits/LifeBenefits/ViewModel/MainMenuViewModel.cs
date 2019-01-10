@@ -30,6 +30,7 @@ namespace LifeBenefits.ViewModel
         private void GoToClaimActivityPage(object obj)
         {
             //Analytics.TrackEvent("Launch Claim Activity");
+            navigation.PushAsync(new ClaimActivityPagexaml());
         }
         private void GoToBenefitsPage(object obj)
         {

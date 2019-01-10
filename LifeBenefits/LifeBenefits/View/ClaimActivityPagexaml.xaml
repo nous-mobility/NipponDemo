@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="LifeBenefits.View.ClaimActivityPagexaml"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:customControl="clr-namespace:LifeBenefits.CustomControl"
+    xmlns:xe="clr-namespace:XamEffects;assembly=XamEffects"
+    Title="Claim Activity">
+    <ContentPage.Content>
+        <StackLayout>
+            <SearchBar Placeholder="Filter Items" />
+            <ListView
+                x:Name="list"
+                Margin="0,10,0,0"
+                CachingStrategy="RecycleElement"
+                HasUnevenRows="true">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <customControl:ExtendedViewCell>
+                            <Grid ColumnSpacing="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1.5*" />
+                                    <ColumnDefinition Width="2*" />
+                                </Grid.ColumnDefinitions>
+                                <StackLayout Grid.Column="0">
+                                    <Label
+                                        Margin="0,8,0,0"
+                                        FontSize="18"
+                                        HorizontalOptions="CenterAndExpand"
+                                        Text="{Binding Name}"
+                                        TextColor="#557f9f"
+                                        VerticalOptions="Center" />
+                                    <Frame
+                                        Margin="0,18,0,0"
+                                        Padding="5"
+                                        xe:TouchEffect.Color="Red"
+                                        BackgroundColor="#a5a6a5"
+                                        BindingContext="{Binding Source={x:Reference list}, Path=BindingContext}"
+                                        CornerRadius="5"
+                                        HasShadow="True"
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center">
+                                        <StackLayout Spacing="0">
+                                            <Label HorizontalOptions="Center" Text="EOB" />
+                                            <Label HorizontalOptions="Center" Text="Details" />
+                                        </StackLayout>
+                                    </Frame>
+                                </StackLayout>
+                                <StackLayout Grid.Column="1" Padding="0,5,0,5">
+                                    <Label
+                                        FontSize="12"
+                                        Text="Service Date:"
+                                        TextColor="#bababa" />
+                                    <Label
+                                        FontSize="15"
+                                        Text="{Binding ServiceDate}"
+                                        TextColor="Black" />
+                                    <Label Text="Provider:" TextColor="#bababa" />
+                                    <Label
+                                        FontSize="15"
+                                        Text="{Binding Provider}"
+                                        TextColor="Black" />
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Status:" TextColor="#bababa" />
+                                        <Label
+                                            FontSize="15"
+                                            Text="{Binding Status}"
+                                            TextColor="Black" />
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Your Responsibility:" TextColor="#bababa" />
+                                        <Label
+                                            FontSize="15"
+                                            Text="{Binding Resp}"
+                                            TextColor="Black" />
+                                    </StackLayout>
+                                </StackLayout>
+                            </Grid>
+                        </customControl:ExtendedViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
