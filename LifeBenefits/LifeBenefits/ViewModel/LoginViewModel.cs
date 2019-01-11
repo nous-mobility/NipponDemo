@@ -49,6 +49,24 @@ namespace LifeBenefits.ViewModel
                 }
             }
         }
+
+        private string userId= "john.doe@info.com";
+        public string UserId
+        {
+            get
+            {
+                return userId;
+            }
+            set
+            {
+                if (userId != value)
+                {
+                    userId = value;
+                    NotifyPropertyChanged();
+                }
+            }
+        }
+
         #endregion
         #region Commands
         public ICommand OnFindProviderClick => new Command(GoToProviderPage);
@@ -80,10 +98,13 @@ namespace LifeBenefits.ViewModel
 
             //Navigate to MainPage with Pin Code Authentication
             IsPinViewVisible = true;
+
+            //Analytics.TrackEvent("Login successful with User id: " + App.UserId);
         }
         private void ConfirmPinCode(object obj)
         {
             NavigateToMainPage();
+            //Analytics.TrackEvent("Pin code authentication successful of User id: " + App.UserId);
         }
 
         private void NavigateToMainPage()
@@ -94,6 +115,8 @@ namespace LifeBenefits.ViewModel
                 Detail = new NavigationPage(new MainMenuPage())
             };
             Application.Current.MainPage = mainPage;
+
+            App.UserId = UserId;
         }
         private void GoBackToLoginFrame(object obj)
         {

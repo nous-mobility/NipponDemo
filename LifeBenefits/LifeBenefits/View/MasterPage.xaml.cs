@@ -33,6 +33,7 @@ namespace LifeBenefits.View
             {
                 case "Logout":
                     Application.Current.MainPage = new NavigationPage(new LoginPage());
+                    App.UserId = string.Empty;
                     break;
             }
         }

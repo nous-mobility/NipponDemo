@@ -15,6 +15,18 @@ namespace LifeBenefits.View
 		public ContactUs ()
 		{
 			InitializeComponent ();
-		}
+            if (string.IsNullOrEmpty(App.UserId))
+            {
+                //Analytics to update user without login 
+
+                //Analytics.TrackEvent("Launch Contact us without Logged in User");
+            }
+            else
+            {
+                //Analytics to update user with login 
+
+                //Analytics.TrackEvent("Launch Contact us with Logged in User: "+App.UserId);
+            }
+        }
 	}
 }

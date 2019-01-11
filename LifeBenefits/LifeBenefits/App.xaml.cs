@@ -14,6 +14,8 @@ namespace LifeBenefits
         public static int AndroidcreenHeight;
         public static int iOSScreenWidth;
         public static int iOSScreenHeight;
+
+        public static string UserId = string.Empty;
         public App()
         {
             InitializeComponent();

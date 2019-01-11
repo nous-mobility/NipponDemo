@@ -36,7 +36,7 @@
                                 HorizontalOptions="CenterAndExpand"
                                 Style="{StaticResource labelForHeader}"
                                 Text="Member Login" />
-                            <Entry Placeholder="User ID" Text="john.doe@info.com" />
+                            <Entry Placeholder="User ID" Text="{Binding UserId}" />
                             <Entry
                                 IsPassword="True"
                                 Placeholder="Password"

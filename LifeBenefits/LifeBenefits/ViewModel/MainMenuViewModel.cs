@@ -20,7 +20,6 @@ namespace LifeBenefits.ViewModel
         #region CommandMethods
         private void GoToProviderPage(object obj)
         {
-            //Analytics.TrackEvent("Launch Provider");
             navigation.PushAsync(new FindProvider());
         }
         private void GoWellnessPortalPage(object obj)
@@ -44,7 +43,6 @@ namespace LifeBenefits.ViewModel
         }
         private void GoToContactUsPage(object obj)
         {
-            //Analytics.TrackEvent("Launch Contact Us");
             navigation.PushAsync(new ContactUs());
         }
         #endregion

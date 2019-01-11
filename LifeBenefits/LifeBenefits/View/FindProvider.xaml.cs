@@ -18,6 +18,19 @@ namespace LifeBenefits.View
             dentalTick.IsVisible = false;
             filterPanel.IsVisible = false;
             selectedFilterType = "All";
+
+            if(string.IsNullOrEmpty(App.UserId))
+            {
+                //Analytics to update user without login 
+
+                //Analytics.TrackEvent("Launch Provider without Logged in User");
+            }
+            else
+            {
+                //Analytics to update user with login 
+
+                //Analytics.TrackEvent("Launch Provider with Logged in User id: "+App.UserId);
+            }
         }
 
         private void Button_Clicked(object sender, EventArgs e)
@@ -56,6 +69,8 @@ namespace LifeBenefits.View
             selectedFilterType = "All";
             selectedText.Text = selectedFilterType;
             filterStatus = false;
+
+            //Analytics.TrackEvent("Selected provider type: All of Logged in user id: "+App.UserId);
         }
         private void MedicalFilter_Tapped(object sender, EventArgs e)
         {
@@ -66,6 +81,8 @@ namespace LifeBenefits.View
             selectedFilterType = "Medical";
             selectedText.Text = selectedFilterType;
             filterStatus = false;
+
+            //Analytics.TrackEvent("Selected provider type: Medical of Logged in user id: "+App.UserId);
         }
         private void DentalFilter_Tapped(object sender, EventArgs e)
         {
@@ -76,6 +93,8 @@ namespace LifeBenefits.View
             selectedFilterType = "Dental";
             selectedText.Text = selectedFilterType;
             filterStatus = false;
+
+            //Analytics.TrackEvent("Selected provider type: Dental of Logged in user id: "+App.UserId);
         }
     }
 }
