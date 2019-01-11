@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Microsoft.AppCenter.Analytics;
+using System.Collections.Generic;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -34,6 +35,7 @@ namespace LifeBenefits.View
                 case "Logout":
                     Application.Current.MainPage = new NavigationPage(new LoginPage());
                     App.UserId = string.Empty;
+                    Analytics.TrackEvent(App.UserId+" User logged out");
                     break;
             }
         }
