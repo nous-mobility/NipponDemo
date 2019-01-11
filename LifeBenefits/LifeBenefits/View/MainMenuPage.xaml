@@ -55,6 +55,7 @@
                         <Label
                             AutomationId="LblFindProvider"
                             HorizontalOptions="Center"
+                            Style="{StaticResource labelForHeader}"
                             Text="Find a Provider"
                             TextColor="White"
                             VerticalOptions="End" />
@@ -75,6 +76,7 @@
                         <Label
                             AutomationId="LblWellnessPortal"
                             HorizontalOptions="Center"
+                            Style="{StaticResource labelForHeader}"
                             Text="Wellness Portal"
                             TextColor="White"
                             VerticalOptions="End" />
@@ -95,6 +97,7 @@
                         <Label
                             AutomationId="LblClaimActivity"
                             HorizontalOptions="Center"
+                            Style="{StaticResource labelForHeader}"
                             Text="Claim Activity"
                             TextColor="White"
                             VerticalOptions="End" />
@@ -115,6 +118,7 @@
                         <Label
                             AutomationId="LblBenefits"
                             HorizontalOptions="Center"
+                            Style="{StaticResource labelForHeader}"
                             Text="Benefits"
                             TextColor="White"
                             VerticalOptions="End" />
@@ -135,6 +139,7 @@
                         <Label
                             AutomationId="LblIdCard"
                             HorizontalOptions="Center"
+                            Style="{StaticResource labelForHeader}"
                             Text="ID Card"
                             TextColor="White"
                             VerticalOptions="End" />
@@ -155,6 +160,7 @@
                         <Label
                             AutomationId="LblContactUs"
                             HorizontalOptions="Center"
+                            Style="{StaticResource labelForHeader}"
                             Text="Contact Us"
                             TextColor="White"
                             VerticalOptions="End" />

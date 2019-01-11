@@ -100,8 +100,8 @@
                             Margin="0,10,0,0"
                             BackgroundColor="#dc3619"
                             Clicked="Button_Clicked"
-                            HeightRequest="25"
                             HorizontalOptions="Center"
+                            Style="{StaticResource buttonHeight}"
                             Text="Search"
                             TextColor="White">
                             <Button.Padding>

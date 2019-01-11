@@ -1,8 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Application xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="LifeBenefits.App">
+<Application
+    x:Class="LifeBenefits.App"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <Application.Resources>
+        <ResourceDictionary>
+            <OnIdiom
+                x:Key="headerLabelSize"
+                x:TypeArguments="x:Double"
+                Phone="14"
+                Tablet="20" />
+            <Style x:Key="labelForHeader" TargetType="Label">
+                <Setter Property="FontSize" Value="{StaticResource headerLabelSize}" />
+            </Style>
 
+            <OnIdiom
+                x:Key="buttonHeightSize"
+                x:TypeArguments="x:Double"
+                Phone="30"
+                Tablet="40" />
+            <Style x:Key="buttonHeight" TargetType="Button">
+                <Setter Property="HeightRequest" Value="{StaticResource buttonHeightSize}" />
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

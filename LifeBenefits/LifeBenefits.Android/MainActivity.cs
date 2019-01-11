@@ -22,6 +22,9 @@ namespace LifeBenefits.Droid
             XamEffects.Droid.Effects.Init();
             ImageCircleRenderer.Init();
 
+            App.AndroidScreenWidth = (int)(Resources.DisplayMetrics.HeightPixels / Resources.DisplayMetrics.Density);
+            App.AndroidcreenHeight = (int)(Resources.DisplayMetrics.WidthPixels / Resources.DisplayMetrics.Density);
+
             LoadApplication(new App());
         }
     }

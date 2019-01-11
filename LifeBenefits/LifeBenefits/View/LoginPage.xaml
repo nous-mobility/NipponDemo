@@ -27,14 +27,14 @@
             <StackLayout Grid.Row="1">
                 <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
                     <Frame
-                        Margin="20,0,20,0"
+                        x:Name="loginFrame"
                         BackgroundColor="#f2f2f2"
                         CornerRadius="5"
                         IsVisible="{Binding IsPinViewVisible, Converter={StaticResource InverseBooleanConverter}}">
                         <StackLayout>
                             <Label
-                                FontSize="15"
                                 HorizontalOptions="CenterAndExpand"
+                                Style="{StaticResource labelForHeader}"
                                 Text="Member Login" />
                             <Entry Placeholder="User ID" Text="john.doe@info.com" />
                             <Entry
@@ -46,20 +46,20 @@
                                 Padding="0"
                                 BackgroundColor="#a5a6a5"
                                 Command="{Binding OnLoginButtonClick}"
-                                HeightRequest="30"
                                 HorizontalOptions="FillAndExpand"
                                 IsVisible="{Binding IsBusy, Converter={StaticResource InverseBooleanConverter}}"
+                                Style="{StaticResource buttonHeight}"
                                 Text="Login"
                                 TextColor="White" />
                             <Frame
                                 x:Name="loginProgress"
                                 Margin="0,10,0,0"
-                                Padding="2"
+                                Padding="1"
                                 BackgroundColor="#a5a6a5"
                                 HasShadow="False"
-                                HeightRequest="28"
                                 HorizontalOptions="FillAndExpand"
-                                IsVisible="{Binding IsBusy}">
+                                IsVisible="{Binding IsBusy}"
+                                Style="{StaticResource buttonHeight}">
                                 <ActivityIndicator IsRunning="True" Color="White" />
                             </Frame>
                             <StackLayout HorizontalOptions="CenterAndExpand" Spacing="1">
@@ -79,14 +79,14 @@
                         </StackLayout>
                     </Frame>
                     <Frame
-                        Margin="20,0,20,0"
+                        x:Name="pinCodeFrame"
                         BackgroundColor="#f2f2f2"
                         CornerRadius="5"
                         IsVisible="{Binding IsPinViewVisible}">
                         <StackLayout Spacing="20">
                             <Label
-                                FontSize="15"
                                 HorizontalOptions="CenterAndExpand"
+                                Style="{StaticResource labelForHeader}"
                                 Text="Enter Pin" />
                             <Grid>
                                 <Grid.ColumnDefinitions>
@@ -145,8 +145,8 @@
                                 <Button
                                     BackgroundColor="#a5a6a5"
                                     Command="{Binding OnBackButtonClick}"
-                                    HeightRequest="30"
                                     IsVisible="{Binding IsBusy, Converter={StaticResource InverseBooleanConverter}}"
+                                    Style="{StaticResource buttonHeight}"
                                     Text="Back"
                                     TextColor="White">
                                     <Button.Padding>
@@ -159,8 +159,8 @@
                                 <Button
                                     BackgroundColor="#dc3619"
                                     Command="{Binding OnConfirmButtonClick}"
-                                    HeightRequest="30"
                                     IsVisible="{Binding IsBusy, Converter={StaticResource InverseBooleanConverter}}"
+                                    Style="{StaticResource buttonHeight}"
                                     Text="Confirm"
                                     TextColor="White">
                                     <Button.Padding>
@@ -194,6 +194,7 @@
                         <Label
                             AutomationId="LblFindProvider"
                             HorizontalOptions="Center"
+                            Style="{StaticResource labelForHeader}"
                             Text="Find a Provider"
                             TextColor="White"
                             VerticalOptions="End" />
@@ -213,6 +214,7 @@
                         <Label
                             AutomationId="LblContactUs"
                             HorizontalOptions="Center"
+                            Style="{StaticResource labelForHeader}"
                             Text="Contact Us"
                             TextColor="White"
                             VerticalOptions="End" />

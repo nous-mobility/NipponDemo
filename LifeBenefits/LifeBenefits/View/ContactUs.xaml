@@ -50,8 +50,8 @@
                 Margin="0,10,0,0"
                 Padding="8,0,8,0"
                 BackgroundColor="#dc3619"
-                HeightRequest="25"
                 HorizontalOptions="Center"
+                Style="{StaticResource buttonHeight}"
                 Text="Submit a Question"
                 TextColor="White" />
         </StackLayout>

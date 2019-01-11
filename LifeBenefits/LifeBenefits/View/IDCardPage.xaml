@@ -12,8 +12,8 @@
                 Margin="0,10,0,20"
                 Padding="6,2,6,2"
                 BackgroundColor="#dc3619"
-                HeightRequest="25"
                 HorizontalOptions="Center"
+                Style="{StaticResource buttonHeight}"
                 Text="Email"
                 TextColor="White" />
             <ScrollView>

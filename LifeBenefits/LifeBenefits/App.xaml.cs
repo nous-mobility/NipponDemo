@@ -10,6 +10,10 @@ namespace LifeBenefits
 {
     public partial class App : Application
     {
+        public static int AndroidScreenWidth;
+        public static int AndroidcreenHeight;
+        public static int iOSScreenWidth;
+        public static int iOSScreenHeight;
         public App()
         {
             InitializeComponent();
