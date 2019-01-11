@@ -1,4 +1,5 @@
 ﻿using LifeBenefits.View;
+using Microsoft.AppCenter.Analytics;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
@@ -68,6 +69,7 @@ namespace LifeBenefits.ViewModel
         }
 
         #endregion
+
         #region Commands
         public ICommand OnFindProviderClick => new Command(GoToProviderPage);
         public ICommand OnContactUsClick => new Command(GoToContactUsPage); 
@@ -79,12 +81,10 @@ namespace LifeBenefits.ViewModel
         #region CommandsMethod
         private void GoToProviderPage(object obj)
         {
-            //Analytics.TrackEvent("Launch Provider from Login View");
             navigation.PushAsync(new FindProvider());
         }
         private void GoToContactUsPage(object obj)
         {
-            //Analytics.TrackEvent("Launch Contact Us from Login View");
             navigation.PushAsync(new ContactUs());
         }
         async private void DoLogin(object obj)
@@ -99,12 +99,12 @@ namespace LifeBenefits.ViewModel
             //Navigate to MainPage with Pin Code Authentication
             IsPinViewVisible = true;
 
-            //Analytics.TrackEvent("Login successful with User id: " + App.UserId);
+            Analytics.TrackEvent("Login successful with User id: " + App.UserId);
         }
         private void ConfirmPinCode(object obj)
         {
             NavigateToMainPage();
-            //Analytics.TrackEvent("Pin code authentication successful of User id: " + App.UserId);
+            Analytics.TrackEvent("Pin code authentication successful of User id: " + App.UserId);
         }
 
         private void NavigateToMainPage()

@@ -24,21 +24,21 @@ namespace LifeBenefits.ViewModel
         }
         private void GoWellnessPortalPage(object obj)
         {
-            //Analytics.TrackEvent("Launch Wellness Portal");
+            Analytics.TrackEvent("Launch Wellness Portal with Logged in User: " + App.UserId);
         }
         private void GoToClaimActivityPage(object obj)
         {
-            //Analytics.TrackEvent("Launch Claim Activity");
+            Analytics.TrackEvent("Launch Claim Activity with Logged in User: " + App.UserId);
             navigation.PushAsync(new ClaimActivityPagexaml());
         }
         private void GoToBenefitsPage(object obj)
         {
-            //Analytics.TrackEvent("Launch Benfits");
+            Analytics.TrackEvent("Launch Benfits with Logged in User: " + App.UserId);
             navigation.PushAsync(new BenefitsPage());
         }
         private void GoToIDCardPage(object obj)
         {
-            //Analytics.TrackEvent("Launch ID Card");
+            Analytics.TrackEvent("Launch ID Card with Logged in User: " + App.UserId);
             navigation.PushAsync(new IDCardPage());
         }
         private void GoToContactUsPage(object obj)

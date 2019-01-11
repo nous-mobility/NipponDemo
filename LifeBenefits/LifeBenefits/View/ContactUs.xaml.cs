@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using Microsoft.AppCenter.Analytics;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace LifeBenefits.View
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
+    [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ContactUs : ContentPage
 	{
 		public ContactUs ()
@@ -19,13 +14,13 @@ namespace LifeBenefits.View
             {
                 //Analytics to update user without login 
 
-                //Analytics.TrackEvent("Launch Contact us without Logged in User");
+                Analytics.TrackEvent("Launch Contact us without Logged in User");
             }
             else
             {
                 //Analytics to update user with login 
 
-                //Analytics.TrackEvent("Launch Contact us with Logged in User: "+App.UserId);
+                Analytics.TrackEvent("Launch Contact us with Logged in User: "+App.UserId);
             }
         }
 	}
