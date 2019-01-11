@@ -17,6 +17,18 @@ namespace LifeBenefits.View
         public ListItemPage(string filterType)
         {
             InitializeComponent();
+
+            if (Device.Idiom == TargetIdiom.Tablet)
+            {
+                refineSearchButton.Margin = new Thickness(0,0,0,15);
+                providerSearchResultFrame.Padding = new Thickness(18, 15, 18, 0);
+            }
+            else
+            {
+                refineSearchButton.Margin = new Thickness(0, 0, 0, 5);
+                providerSearchResultFrame.Padding = new Thickness(12, 10, 12, 0);
+            }
+
             DeserializeJsonData();
 
             switch(filterType)
@@ -66,10 +78,11 @@ namespace LifeBenefits.View
             var selectedItem = e.Item as Items;
 
             if (selectedItem != null) {
-                //Analytics.TrackEvent("Provider selected", new Dictionary<string, string> {
-                //    { "Name", selectedItem.Name },
-                //    { "Type", selectedItem.Type}
-                //});
+                Analytics.TrackEvent("Provider selected", new Dictionary<string, string> {
+                    { "Name", selectedItem.Name },
+                    { "Type", selectedItem.Type},
+                    { "Network", "Aetna Signature Administration (ASA)"}
+                });
                 Navigation.PushAsync(new ItemDetailPage(selectedItem));
             }
 

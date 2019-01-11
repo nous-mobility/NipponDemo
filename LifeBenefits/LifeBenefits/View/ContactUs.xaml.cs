@@ -1,4 +1,5 @@
 ﻿using Microsoft.AppCenter.Analytics;
+using System.Collections.Generic;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,17 +11,23 @@ namespace LifeBenefits.View
 		public ContactUs ()
 		{
 			InitializeComponent ();
+
+            if (Device.Idiom == TargetIdiom.Tablet)
+            {
+                contactUsFrame.Margin = new Thickness(70, 0, 70, 0);
+            }
+            else
+            {
+                contactUsFrame.Margin = new Thickness(6, 0, 6, 0);
+            }
+
             if (string.IsNullOrEmpty(App.UserId))
             {
                 //Analytics to update user without login 
 
-                Analytics.TrackEvent("Launch Contact us without Logged in User");
-            }
-            else
-            {
-                //Analytics to update user with login 
-
-                Analytics.TrackEvent("Launch Contact us with Logged in User: "+App.UserId);
+                Analytics.TrackEvent("Unregistered User Access", new Dictionary<string, string> {
+                    { "Screen", "Contact Us" }
+                });
             }
         }
 	}

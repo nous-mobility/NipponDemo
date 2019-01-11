@@ -13,8 +13,8 @@
                 <RowDefinition Height="8*" />
             </Grid.RowDefinitions>
             <StackLayout
+                x:Name="providerSearchResultFrame"
                 Grid.Row="0"
-                Padding="0,10,0,0"
                 BackgroundColor="#f2f2f2">
                 <Grid RowSpacing="2">
                     <Grid.RowDefinitions>
@@ -55,13 +55,15 @@
                     </StackLayout>
                 </Grid>
                 <Button
-                    Padding="4,1,4,1"
+                    x:Name="refineSearchButton"
+                    Padding="6,1,6,1"
                     BackgroundColor="#dc3619"
                     Clicked="Button_Clicked"
-                    HeightRequest="25"
                     HorizontalOptions="Center"
+                    Style="{StaticResource buttonHeight}"
                     Text="Refine your Search"
-                    TextColor="White" />
+                    TextColor="White"
+                    VerticalOptions="EndAndExpand" />
             </StackLayout>
             <StackLayout Grid.Row="1">
                 <SearchBar Placeholder="Filter Items" />
@@ -75,7 +77,7 @@
                         <DataTemplate>
                             <ViewCell>
                                 <StackLayout
-                                    Margin="8,0,8,0"
+                                    Margin="10,0,8,0"
                                     BackgroundColor="Transparent"
                                     Orientation="Horizontal">
                                     <controls:CircleImage

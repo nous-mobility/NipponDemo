@@ -1,5 +1,6 @@
 ﻿using LifeBenefits.View;
 using Microsoft.AppCenter.Analytics;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
@@ -99,12 +100,16 @@ namespace LifeBenefits.ViewModel
             //Navigate to MainPage with Pin Code Authentication
             IsPinViewVisible = true;
 
-            Analytics.TrackEvent("Login successful with User id: " + App.UserId);
+            Analytics.TrackEvent("Authentication", new Dictionary<string, string> {
+                    { "Login", "Sucess" }
+                });
         }
         private void ConfirmPinCode(object obj)
         {
             NavigateToMainPage();
-            Analytics.TrackEvent("Pin code authentication successful of User id: " + App.UserId);
+            Analytics.TrackEvent("Authentication", new Dictionary<string, string> {
+                    { "PIN Verification", "Sucess" }
+                });
         }
 
         private void NavigateToMainPage()

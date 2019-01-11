@@ -1,5 +1,6 @@
 ﻿using Microsoft.AppCenter.Analytics;
 using System;
+using System.Collections.Generic;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -20,17 +21,23 @@ namespace LifeBenefits.View
             filterPanel.IsVisible = false;
             selectedFilterType = "All";
 
-            if(string.IsNullOrEmpty(App.UserId))
+            if (Device.Idiom == TargetIdiom.Tablet)
             {
-                //Analytics to update user without login 
-
-                Analytics.TrackEvent("Launch Provider without Logged in User");
+                findProviderFrame.Margin = new Thickness(70, 0, 70, 0);
+                providerFrameSpacing.Padding = new Thickness(18,18,18,20);
             }
             else
             {
-                //Analytics to update user with login 
+                findProviderFrame.Margin = new Thickness(6, 0, 6, 0);
+                providerFrameSpacing.Padding = new Thickness(12, 12, 12, 15);
+            }
 
-                Analytics.TrackEvent("Launch Provider with Logged in User id: "+App.UserId);
+            if (string.IsNullOrEmpty(App.UserId))
+            {
+                //Analytics to update user without login 
+                Analytics.TrackEvent("Unregistered User Access", new Dictionary<string, string> {
+                    { "Screen", "Find Provider" }
+                });
             }
         }
 
@@ -70,8 +77,6 @@ namespace LifeBenefits.View
             selectedFilterType = "All";
             selectedText.Text = selectedFilterType;
             filterStatus = false;
-
-            Analytics.TrackEvent("Selected provider type: All of Logged in user id: "+App.UserId);
         }
         private void MedicalFilter_Tapped(object sender, EventArgs e)
         {
@@ -82,8 +87,6 @@ namespace LifeBenefits.View
             selectedFilterType = "Medical";
             selectedText.Text = selectedFilterType;
             filterStatus = false;
-
-            Analytics.TrackEvent("Selected provider type: Medical of Logged in user id: "+App.UserId);
         }
         private void DentalFilter_Tapped(object sender, EventArgs e)
         {
@@ -94,8 +97,6 @@ namespace LifeBenefits.View
             selectedFilterType = "Dental";
             selectedText.Text = selectedFilterType;
             filterStatus = false;
-
-            Analytics.TrackEvent("Selected provider type: Dental of Logged in user id: "+App.UserId);
         }
     }
 }

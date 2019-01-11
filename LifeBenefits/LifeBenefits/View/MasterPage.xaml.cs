@@ -6,8 +6,8 @@ using Xamarin.Forms.Xaml;
 namespace LifeBenefits.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class MasterPage : ContentPage
-	{
+    public partial class MasterPage : ContentPage
+    {
         List<NavItems> NavigationListItem = new List<NavItems>()
         {
             new NavItems(){ Name = "Home", IconName = "listIcon" },
@@ -15,9 +15,9 @@ namespace LifeBenefits.View
             new NavItems(){ Name = "Settings", IconName = "contactIcon" },
             new NavItems(){ Name = "Logout", IconName = "logoutIcon" },
         };
-        public MasterPage ()
-		{
-			InitializeComponent ();
+        public MasterPage()
+        {
+            InitializeComponent();
             navListView.ItemsSource = NavigationListItem;
         }
 
@@ -34,8 +34,11 @@ namespace LifeBenefits.View
             {
                 case "Logout":
                     Application.Current.MainPage = new NavigationPage(new LoginPage());
+                    Analytics.TrackEvent("Authentication", new Dictionary<string, string> {
+                        { "Logout", "Sucess" }
+                    });
+
                     App.UserId = string.Empty;
-                    Analytics.TrackEvent(App.UserId+" User logged out");
                     break;
             }
         }

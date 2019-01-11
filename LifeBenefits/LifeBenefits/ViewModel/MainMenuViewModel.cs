@@ -1,5 +1,6 @@
 ﻿using LifeBenefits.View;
 using Microsoft.AppCenter.Analytics;
+using System.Collections.Generic;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -20,29 +21,43 @@ namespace LifeBenefits.ViewModel
         #region CommandMethods
         private void GoToProviderPage(object obj)
         {
+            Analytics.TrackEvent("Page Views", new Dictionary<string, string> {
+                    { "Screen", "Find Provider" }
+                });
             navigation.PushAsync(new FindProvider());
         }
         private void GoWellnessPortalPage(object obj)
         {
-            Analytics.TrackEvent("Launch Wellness Portal with Logged in User: " + App.UserId);
+            Analytics.TrackEvent("Page Views", new Dictionary<string, string> {
+                    { "Screen", "Wellness Portal" }
+                });
         }
         private void GoToClaimActivityPage(object obj)
         {
-            Analytics.TrackEvent("Launch Claim Activity with Logged in User: " + App.UserId);
+            Analytics.TrackEvent("Page Views", new Dictionary<string, string> {
+                    { "Screen", "Claim Activity" }
+                });
             navigation.PushAsync(new ClaimActivityPagexaml());
         }
         private void GoToBenefitsPage(object obj)
         {
-            Analytics.TrackEvent("Launch Benfits with Logged in User: " + App.UserId);
+            Analytics.TrackEvent("Page Views", new Dictionary<string, string> {
+                    { "Screen", "Benefits" }
+                });
             navigation.PushAsync(new BenefitsPage());
         }
         private void GoToIDCardPage(object obj)
         {
-            Analytics.TrackEvent("Launch ID Card with Logged in User: " + App.UserId);
+            Analytics.TrackEvent("Page Views", new Dictionary<string, string> {
+                    { "Screen", "ID Card" }
+                });
             navigation.PushAsync(new IDCardPage());
         }
         private void GoToContactUsPage(object obj)
         {
+            Analytics.TrackEvent("Page Views", new Dictionary<string, string> {
+                    { "Screen", "Contact Us" }
+                });
             navigation.PushAsync(new ContactUs());
         }
         #endregion
