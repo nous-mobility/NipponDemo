@@ -19,7 +19,7 @@
             <local:PinchToZoomContainer>
                 <local:PinchToZoomContainer.Content>
                     <Image
-                        Aspect="AspectFill"
+                        Aspect="AspectFit"
                         HorizontalOptions="FillAndExpand"
                         Source="sampleIdCard.png"
                         VerticalOptions="FillAndExpand" />

@@ -15,7 +15,16 @@ namespace LifeBenefits.View
 		public BenefitsPage ()
 		{
 			InitializeComponent ();
-		}
+
+            if (Device.Idiom == TargetIdiom.Tablet)
+            {
+                benefitsFrame.Margin = new Thickness(70, 0, 70, 0);
+            }
+            else
+            {
+                benefitsFrame.Margin = new Thickness(6, 0, 6, 0);
+            }
+        }
 
         private void MedicalPharmacy_Tapped(object sender, EventArgs e)
         {
