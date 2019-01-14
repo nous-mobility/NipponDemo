@@ -31,6 +31,8 @@ namespace LifeBenefits.ViewModel
             Analytics.TrackEvent("Page Views", new Dictionary<string, string> {
                     { "Screen", "Wellness Portal" }
                 });
+
+            navigation.PushAsync(new WellnessPortalPage());
         }
         private void GoToClaimActivityPage(object obj)
         {
