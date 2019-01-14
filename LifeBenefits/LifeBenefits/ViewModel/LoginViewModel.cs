@@ -95,10 +95,10 @@ namespace LifeBenefits.ViewModel
             IsBusy = false;
 
             //Navigate to MainPage without Pin Code Authentication
-            NavigateToMainPage();
+            //NavigateToMainPage();
 
             //Navigate to MainPage with Pin Code Authentication
-            //IsPinViewVisible = true;
+            IsPinViewVisible = true;
 
             Analytics.TrackEvent("Authentication", new Dictionary<string, string> {
                     { "Login", "Sucess" }
