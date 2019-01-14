@@ -221,7 +221,9 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\ViewCellBackground.xml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\navigation.png" />
+  </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-mdpi\sampleIdCard.png" />
   </ItemGroup>

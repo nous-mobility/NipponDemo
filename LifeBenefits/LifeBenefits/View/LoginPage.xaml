@@ -87,7 +87,7 @@
                             <Label
                                 HorizontalOptions="CenterAndExpand"
                                 Style="{StaticResource labelForHeader}"
-                                Text="Enter Pin" />
+                                Text="Enter One Time Password" />
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*" />

@@ -30,5 +30,12 @@ namespace LifeBenefits.View
 
             map.Pins.Add(pin);
         }
-	}
+
+        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            var uri = new Uri("http://maps.google.com/maps?saddr=Silverstein+Family+Park,+Greenwich+St,+New+York,+NY+10007,+USA");
+            Device.OpenUri(uri);
+            
+        }
+    }
 }

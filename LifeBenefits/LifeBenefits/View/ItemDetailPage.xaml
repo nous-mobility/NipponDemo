@@ -45,6 +45,9 @@
                             Source="marker"
                             WidthRequest="25" />
                         <Label x:Name="lblAddress" />
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                        </StackLayout.GestureRecognizers>
                     </StackLayout>
                 </StackLayout>
             </StackLayout>
