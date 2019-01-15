@@ -18,9 +18,8 @@ namespace LifeBenefits.View
             lblPhone.Text = selectedItem.Phone;
             lblAddress.Text = selectedItem.Address;
 
-            map.MoveToRegion(
-                MapSpan.FromCenterAndRadius(new Position(Convert.ToDouble(selectedItem.Lat), Convert.ToDouble(selectedItem.Long))
-                , Distance.FromMiles(1)));
+            Position position = new Position(Convert.ToDouble(selectedItem.Lat), Convert.ToDouble(selectedItem.Long));
+            map.MoveToRegion(new MapSpan(position, 0.01, 0.01));
 
             var pin = new Pin()
             {
