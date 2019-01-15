@@ -162,7 +162,7 @@
     </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
     <PackageReference Include="Xamarin.Forms.Maps">
-      <Version>3.4.0.1008975</Version>
+      <Version>3.4.0.1009999</Version>
     </PackageReference>
     <PackageReference Include="XamEffects">
       <Version>1.5.3</Version>

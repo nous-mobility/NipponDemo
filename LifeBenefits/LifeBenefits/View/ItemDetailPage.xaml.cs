@@ -19,13 +19,14 @@ namespace LifeBenefits.View
             lblAddress.Text = selectedItem.Address;
 
             map.MoveToRegion(
-                MapSpan.FromCenterAndRadius(new Xamarin.Forms.Maps.Position(Convert.ToDouble(selectedItem.Lat), Convert.ToDouble(selectedItem.Long))
+                MapSpan.FromCenterAndRadius(new Position(Convert.ToDouble(selectedItem.Lat), Convert.ToDouble(selectedItem.Long))
                 , Distance.FromMiles(1)));
 
             var pin = new Pin()
             {
                 Position = new Position(Convert.ToDouble(selectedItem.Lat), Convert.ToDouble(selectedItem.Long)),
-                Label = selectedItem.Address
+                Label = selectedItem.Name,
+                Address = selectedItem.Address
             };
 
             map.Pins.Add(pin);
