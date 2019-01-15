@@ -34,7 +34,7 @@ namespace LifeBenefits.View
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
             string address = selectedItem.Address.Replace(" ", "+");
-            var uri = new Uri("http://maps.google.com/maps?saddr=City+Hall+Park,+New+York,+NY+10007,+USA&daddr="+ address);
+            var uri = new Uri("http://maps.google.com/maps?saddr=Nous+Infosystems+PVT+Ltd,+Metroplex+Drive,+Edison,+NJ,+USA&daddr=" + address);
             Device.OpenUri(uri);
         }
     }
