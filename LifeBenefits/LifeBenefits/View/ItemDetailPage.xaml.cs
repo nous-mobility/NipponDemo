@@ -33,8 +33,9 @@ namespace LifeBenefits.View
 
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            var uri = new Uri("http://maps.google.com/maps?saddr=One+Pace+Plaza,+New+York,+NY+10038,+USA&daddr=Silverstein+Family+Park,+Greenwich+St,+New+York,+NY+10007,+USA");
-            Device.OpenUri(uri);            
+            string address = selectedItem.Address.Replace(" ", "+");
+            var uri = new Uri("http://maps.google.com/maps?saddr=City+Hall+Park,+New+York,+NY+10007,+USA&daddr="+ address);
+            Device.OpenUri(uri);
         }
     }
 }
