@@ -25,8 +25,8 @@
                                 <StackLayout Grid.Column="0">
                                     <Label
                                         Margin="0,8,0,0"
-                                        FontSize="18"
                                         HorizontalOptions="CenterAndExpand"
+                                        Style="{StaticResource labelForListItemTitle}"
                                         Text="{Binding Name}"
                                         TextColor="#557f9f"
                                         VerticalOptions="Center" />
@@ -48,29 +48,38 @@
                                 </StackLayout>
                                 <StackLayout Grid.Column="1" Padding="0,5,0,5">
                                     <Label
-                                        FontSize="12"
+                                        Style="{StaticResource labelForListSubItemTitle2}"
                                         Text="Service Date:"
                                         TextColor="#bababa" />
                                     <Label
-                                        FontSize="15"
+                                        Style="{StaticResource labelForListSubItemTitle1}"
                                         Text="{Binding ServiceDate}"
                                         TextColor="Black" />
-                                    <Label Text="Provider:" TextColor="#bababa" />
                                     <Label
-                                        FontSize="15"
+                                        Style="{StaticResource labelForListSubItemTitle2}"
+                                        Text="Provider:"
+                                        TextColor="#bababa" />
+                                    <Label
+                                        Style="{StaticResource labelForListSubItemTitle1}"
                                         Text="{Binding Provider}"
                                         TextColor="Black" />
                                     <StackLayout Orientation="Horizontal">
-                                        <Label Text="Status:" TextColor="#bababa" />
                                         <Label
-                                            FontSize="15"
+                                            Style="{StaticResource labelForListSubItemTitle2}"
+                                            Text="Status:"
+                                            TextColor="#bababa" />
+                                        <Label
+                                            Style="{StaticResource labelForListSubItemTitle1}"
                                             Text="{Binding Status}"
                                             TextColor="Black" />
                                     </StackLayout>
                                     <StackLayout Orientation="Horizontal">
-                                        <Label Text="Your Responsibility:" TextColor="#bababa" />
                                         <Label
-                                            FontSize="15"
+                                            Style="{StaticResource labelForListSubItemTitle2}"
+                                            Text="Your Responsibility:"
+                                            TextColor="#bababa" />
+                                        <Label
+                                            Style="{StaticResource labelForListSubItemTitle1}"
                                             Text="{Binding Resp}"
                                             TextColor="Black" />
                                     </StackLayout>

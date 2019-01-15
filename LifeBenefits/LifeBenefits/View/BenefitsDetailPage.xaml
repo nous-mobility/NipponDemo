@@ -24,8 +24,8 @@
                             BackgroundColor="#e0e0e0"
                             Orientation="Horizontal">
                             <Label
-                                FontSize="16"
                                 HorizontalOptions="StartAndExpand"
+                                Style="{StaticResource labelForHeader4}"
                                 Text="Office"
                                 TextColor="Black" />
                             <Image
@@ -50,13 +50,14 @@
                                 BackgroundColor="#dc3619"
                                 Orientation="Horizontal">
                                 <Label
-                                    FontSize="16"
                                     HorizontalOptions="StartAndExpand"
+                                    Style="{StaticResource labelForHeader4}"
                                     Text="Hospital"
                                     TextColor="White" />
                                 <Label
                                     Margin="0,0,5,0"
                                     HorizontalOptions="End"
+                                    Style="{StaticResource labelForHeader4}"
                                     Text="Member pays"
                                     TextColor="White" />
                             </StackLayout>
@@ -65,13 +66,14 @@
                                 BackgroundColor="#f2f2f2"
                                 Orientation="Horizontal">
                                 <Label
-                                    FontSize="16"
                                     HorizontalOptions="StartAndExpand"
+                                    Style="{StaticResource labelForListSubItemTitle1}"
                                     Text="In-Network"
                                     TextColor="Black" />
                                 <Label
                                     Margin="0,0,5,0"
                                     HorizontalOptions="End"
+                                    Style="{StaticResource labelForListSubItemTitle1}"
                                     Text="0% after $200 deductable"
                                     TextColor="Black" />
                             </StackLayout>
@@ -80,13 +82,14 @@
                                 BackgroundColor="#dbdbdb"
                                 Orientation="Horizontal">
                                 <Label
-                                    FontSize="16"
                                     HorizontalOptions="StartAndExpand"
+                                    Style="{StaticResource labelForListSubItemTitle1}"
                                     Text="Out-of-Network"
                                     TextColor="Black" />
                                 <Label
                                     Margin="0,0,5,0"
                                     HorizontalOptions="End"
+                                    Style="{StaticResource labelForListSubItemTitle1}"
                                     Text="30% after 4200 deductable"
                                     TextColor="Black" />
                             </StackLayout>
@@ -96,13 +99,14 @@
                                 BackgroundColor="#dc3619"
                                 Orientation="Horizontal">
                                 <Label
-                                    FontSize="16"
                                     HorizontalOptions="StartAndExpand"
+                                    Style="{StaticResource labelForHeader4}"
                                     Text="Specialists"
                                     TextColor="White" />
                                 <Label
                                     Margin="0,0,5,0"
                                     HorizontalOptions="End"
+                                    Style="{StaticResource labelForHeader4}"
                                     Text="Member pays"
                                     TextColor="White" />
                             </StackLayout>
@@ -111,13 +115,14 @@
                                 BackgroundColor="#f2f2f2"
                                 Orientation="Horizontal">
                                 <Label
-                                    FontSize="16"
                                     HorizontalOptions="StartAndExpand"
+                                    Style="{StaticResource labelForListSubItemTitle1}"
                                     Text="In-Network"
                                     TextColor="Black" />
                                 <Label
                                     Margin="0,0,5,0"
                                     HorizontalOptions="End"
+                                    Style="{StaticResource labelForListSubItemTitle1}"
                                     Text="0% after $200 deductable"
                                     TextColor="Black" />
                             </StackLayout>
@@ -126,13 +131,14 @@
                                 BackgroundColor="#dbdbdb"
                                 Orientation="Horizontal">
                                 <Label
-                                    FontSize="16"
                                     HorizontalOptions="StartAndExpand"
+                                    Style="{StaticResource labelForListSubItemTitle1}"
                                     Text="Out-of-Network"
                                     TextColor="Black" />
                                 <Label
                                     Margin="0,0,5,0"
                                     HorizontalOptions="End"
+                                    Style="{StaticResource labelForListSubItemTitle1}"
                                     Text="30% after 4200 deductable"
                                     TextColor="Black" />
                             </StackLayout>
@@ -142,13 +148,14 @@
                                 BackgroundColor="#dc3619"
                                 Orientation="Horizontal">
                                 <Label
-                                    FontSize="16"
                                     HorizontalOptions="StartAndExpand"
+                                    Style="{StaticResource labelForHeader4}"
                                     Text="Urgent Care"
                                     TextColor="White" />
                                 <Label
                                     Margin="0,0,5,0"
                                     HorizontalOptions="End"
+                                    Style="{StaticResource labelForHeader4}"
                                     Text="Member pays"
                                     TextColor="White" />
                             </StackLayout>
@@ -157,13 +164,14 @@
                                 BackgroundColor="#f2f2f2"
                                 Orientation="Horizontal">
                                 <Label
-                                    FontSize="16"
                                     HorizontalOptions="StartAndExpand"
+                                    Style="{StaticResource labelForListSubItemTitle1}"
                                     Text="In-Network"
                                     TextColor="Black" />
                                 <Label
                                     Margin="0,0,5,0"
                                     HorizontalOptions="End"
+                                    Style="{StaticResource labelForListSubItemTitle1}"
                                     Text="0% after $200 deductable"
                                     TextColor="Black" />
                             </StackLayout>
@@ -172,13 +180,14 @@
                                 BackgroundColor="#dbdbdb"
                                 Orientation="Horizontal">
                                 <Label
-                                    FontSize="16"
                                     HorizontalOptions="StartAndExpand"
+                                    Style="{StaticResource labelForListSubItemTitle1}"
                                     Text="Out-of-Network"
                                     TextColor="Black" />
                                 <Label
                                     Margin="0,0,5,0"
                                     HorizontalOptions="End"
+                                    Style="{StaticResource labelForListSubItemTitle1}"
                                     Text="30% after 4200 deductable"
                                     TextColor="Black" />
                             </StackLayout>
@@ -186,8 +195,8 @@
                         <StackLayout Grid.Row="2">
                             <StackLayout Padding="10,5,0,4" Orientation="Horizontal">
                                 <Label
-                                    FontSize="16"
                                     HorizontalOptions="StartAndExpand"
+                                    Style="{StaticResource labelForHeader4}"
                                     Text="Hospital"
                                     TextColor="Black" />
                                 <Image
@@ -202,8 +211,8 @@
                         <StackLayout Grid.Row="3">
                             <StackLayout Padding="10,2,0,4" Orientation="Horizontal">
                                 <Label
-                                    FontSize="16"
                                     HorizontalOptions="StartAndExpand"
+                                    Style="{StaticResource labelForHeader4}"
                                     Text="Pharmacy"
                                     TextColor="Black" />
                                 <Image
@@ -221,8 +230,8 @@
                         <StackLayout Grid.Row="4">
                             <StackLayout Padding="10,2,0,4" Orientation="Horizontal">
                                 <Label
-                                    FontSize="16"
                                     HorizontalOptions="StartAndExpand"
+                                    Style="{StaticResource labelForHeader4}"
                                     Text="Accumulator Balances"
                                     TextColor="Black" />
                                 <Image

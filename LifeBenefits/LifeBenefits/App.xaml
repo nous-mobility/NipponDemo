@@ -22,6 +22,60 @@
             <Style x:Key="buttonHeight" TargetType="Button">
                 <Setter Property="HeightRequest" Value="{StaticResource buttonHeightSize}" />
             </Style>
+
+            <OnIdiom
+                x:Key="header2LabelSize"
+                x:TypeArguments="x:Double"
+                Phone="16"
+                Tablet="20" />
+            <Style x:Key="labelForHeader2" TargetType="Label">
+                <Setter Property="FontSize" Value="{StaticResource header2LabelSize}" />
+            </Style>
+
+            <OnIdiom
+                x:Key="listItemTitleLabelSize"
+                x:TypeArguments="x:Double"
+                Phone="18"
+                Tablet="20" />
+            <Style x:Key="labelForListItemTitle" TargetType="Label">
+                <Setter Property="FontSize" Value="{StaticResource listItemTitleLabelSize}" />
+            </Style>
+
+            <OnIdiom
+                x:Key="listItemSubTitle1LabelSize"
+                x:TypeArguments="x:Double"
+                Phone="15"
+                Tablet="18" />
+            <Style x:Key="labelForListSubItemTitle1" TargetType="Label">
+                <Setter Property="FontSize" Value="{StaticResource listItemSubTitle1LabelSize}" />
+            </Style>
+
+            <OnIdiom
+                x:Key="listItemSubTitle2LabelSize"
+                x:TypeArguments="x:Double"
+                Phone="12"
+                Tablet="15" />
+            <Style x:Key="labelForListSubItemTitle2" TargetType="Label">
+                <Setter Property="FontSize" Value="{StaticResource listItemSubTitle2LabelSize}" />
+            </Style>
+
+            <OnIdiom
+                x:Key="header3LabelSize"
+                x:TypeArguments="x:Double"
+                Phone="18"
+                Tablet="22" />
+            <Style x:Key="labelForHeader3" TargetType="Label">
+                <Setter Property="FontSize" Value="{StaticResource header3LabelSize}" />
+            </Style>
+
+            <OnIdiom
+                x:Key="header4LabelSize"
+                x:TypeArguments="x:Double"
+                Phone="16"
+                Tablet="20" />
+            <Style x:Key="labelForHeader4" TargetType="Label">
+                <Setter Property="FontSize" Value="{StaticResource header4LabelSize}" />
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

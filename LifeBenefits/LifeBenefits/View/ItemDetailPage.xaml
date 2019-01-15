@@ -26,25 +26,25 @@
                 <StackLayout Margin="10,0,0,0" VerticalOptions="Center">
                     <Label
                         x:Name="lblName"
-                        FontSize="18"
+                        Style="{StaticResource labelForHeader3}"
                         TextColor="Black" />
                     <Label
                         x:Name="lblType"
-                        FontSize="16"
+                        Style="{StaticResource labelForHeader4}"
                         TextColor="Black" />
                     <StackLayout Orientation="Horizontal">
                         <Image
                             HeightRequest="20"
                             Source="phone"
                             WidthRequest="20" />
-                        <Label x:Name="lblPhone" />
+                        <Label x:Name="lblPhone" Style="{StaticResource labelForHeader4}" />
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <Image
                             HeightRequest="25"
                             Source="marker"
                             WidthRequest="25" />
-                        <Label x:Name="lblAddress" />
+                        <Label x:Name="lblAddress" Style="{StaticResource labelForHeader4}" />
                         <StackLayout.GestureRecognizers>
                             <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
                         </StackLayout.GestureRecognizers>

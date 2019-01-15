@@ -11,8 +11,8 @@
                 <StackLayout>
                     <StackLayout Padding="5,5,0,4" Orientation="Horizontal">
                         <Label
-                            FontSize="16"
                             HorizontalOptions="StartAndExpand"
+                            Style="{StaticResource labelForHeader4}"
                             Text="Medical Pharmacy" />
                         <Image
                             Margin="0,0,10,0"
@@ -27,8 +27,8 @@
                     <BoxView BackgroundColor="#e8e8e8" HeightRequest="1" />
                     <StackLayout Padding="5,2,0,4" Orientation="Horizontal">
                         <Label
-                            FontSize="16"
                             HorizontalOptions="StartAndExpand"
+                            Style="{StaticResource labelForHeader4}"
                             Text="Dental" />
                         <Image
                             Margin="0,0,10,0"
@@ -43,8 +43,8 @@
                     <BoxView BackgroundColor="#e8e8e8" HeightRequest="1" />
                     <StackLayout Padding="5,2,0,4" Orientation="Horizontal">
                         <Label
-                            FontSize="16"
                             HorizontalOptions="StartAndExpand"
+                            Style="{StaticResource labelForHeader4}"
                             Text="HRA/FSA" />
                         <Image
                             Margin="0,0,10,0"

@@ -9,8 +9,8 @@
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="2*" />
-                <RowDefinition Height="8*" />
+                <RowDefinition Height="2.2*" />
+                <RowDefinition Height="7.8*" />
             </Grid.RowDefinitions>
             <StackLayout
                 x:Name="providerSearchResultFrame"
@@ -30,33 +30,36 @@
                         Grid.Row="0"
                         Grid.Column="0"
                         Padding="10,0,0,0">
-                        <Label Text="Provider Type" />
+                        <Label Style="{StaticResource labelForHeader2}" Text="Provider Type" />
                     </StackLayout>
                     <StackLayout
                         Grid.Row="1"
                         Grid.Column="0"
                         Padding="10,0,0,0">
-                        <Label Text="Speciality" />
+                        <Label Style="{StaticResource labelForHeader2}" Text="Speciality" />
                     </StackLayout>
                     <StackLayout
                         Grid.Row="2"
                         Grid.Column="0"
                         Padding="10,0,0,0">
-                        <Label Text="Location" />
+                        <Label Style="{StaticResource labelForHeader2}" Text="Location" />
                     </StackLayout>
                     <StackLayout Grid.Row="0" Grid.Column="1">
-                        <Label x:Name="providerType" Text=": All" />
+                        <Label
+                            x:Name="providerType"
+                            Style="{StaticResource labelForHeader2}"
+                            Text=": All" />
                     </StackLayout>
                     <StackLayout Grid.Row="1" Grid.Column="1">
-                        <Label Text=": All Doctors (Primary Care)" />
+                        <Label Style="{StaticResource labelForHeader2}" Text=": All Doctors (Primary Care)" />
                     </StackLayout>
                     <StackLayout Grid.Row="2" Grid.Column="1">
-                        <Label Text=": Current Location" />
+                        <Label Style="{StaticResource labelForHeader2}" Text=": Current Location" />
                     </StackLayout>
                 </Grid>
                 <Button
                     x:Name="refineSearchButton"
-                    Padding="6,1,6,1"
+                    Padding="8,1,8,1"
                     BackgroundColor="#dc3619"
                     Clicked="Button_Clicked"
                     HorizontalOptions="Center"
@@ -89,8 +92,8 @@
                                         WidthRequest="50" />
                                     <StackLayout Margin="5,0,0,0" VerticalOptions="Center">
                                         <Label
-                                            FontSize="18"
                                             LineBreakMode="TailTruncation"
+                                            Style="{StaticResource labelForListItemTitle}"
                                             Text="{Binding Name}"
                                             TextColor="Black" />
                                         <StackLayout Orientation="Horizontal">
@@ -99,8 +102,8 @@
                                                 Source="phone"
                                                 WidthRequest="15" />
                                             <Label
-                                                FontSize="15"
                                                 LineBreakMode="TailTruncation"
+                                                Style="{StaticResource labelForListSubItemTitle1}"
                                                 Text="{Binding Phone}"
                                                 TextColor="Gray" />
                                         </StackLayout>
@@ -110,8 +113,8 @@
                                                 Source="marker"
                                                 WidthRequest="20" />
                                             <Label
-                                                FontSize="12"
                                                 LineBreakMode="TailTruncation"
+                                                Style="{StaticResource labelForListSubItemTitle2}"
                                                 Text="{Binding Address}"
                                                 TextColor="Gray" />
                                         </StackLayout>

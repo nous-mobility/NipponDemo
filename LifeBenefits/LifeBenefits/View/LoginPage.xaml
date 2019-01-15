@@ -34,7 +34,7 @@
                         <StackLayout>
                             <Label
                                 HorizontalOptions="CenterAndExpand"
-                                Style="{StaticResource labelForHeader}"
+                                Style="{StaticResource labelForHeader2}"
                                 Text="Member Login" />
                             <Entry Placeholder="User ID" Text="{Binding UserId}" />
                             <Entry
@@ -63,14 +63,14 @@
                                 <ActivityIndicator IsRunning="True" Color="White" />
                             </Frame>
                             <StackLayout HorizontalOptions="CenterAndExpand" Spacing="1">
-                                <Label Text="New User Registration" />
+                                <Label Style="{StaticResource labelForListSubItemTitle1}" Text="New User Registration" />
                                 <BoxView
                                     BackgroundColor="#a5a6a5"
                                     HeightRequest="1"
                                     HorizontalOptions="FillAndExpand" />
                             </StackLayout>
                             <StackLayout HorizontalOptions="CenterAndExpand" Spacing="1">
-                                <Label Text="Forgot User ID or Password" />
+                                <Label Style="{StaticResource labelForListSubItemTitle1}" Text="Forgot User ID or Password" />
                                 <BoxView
                                     BackgroundColor="#a5a6a5"
                                     HeightRequest="1"
@@ -86,7 +86,7 @@
                         <StackLayout Spacing="20">
                             <Label
                                 HorizontalOptions="CenterAndExpand"
-                                Style="{StaticResource labelForHeader}"
+                                Style="{StaticResource labelForHeader2}"
                                 Text="Enter One Time Password" />
                             <Grid>
                                 <Grid.ColumnDefinitions>

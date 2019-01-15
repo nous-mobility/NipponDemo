@@ -16,8 +16,8 @@
                             Source="phone_black"
                             WidthRequest="15" />
                         <Label
-                            FontSize="16"
                             HorizontalOptions="StartAndExpand"
+                            Style="{StaticResource labelForHeader4}"
                             Text="Phone" />
                         <Image
                             Margin="0,0,10,0"
@@ -34,8 +34,8 @@
                             Source="email"
                             WidthRequest="15" />
                         <Label
-                            FontSize="16"
                             HorizontalOptions="StartAndExpand"
+                            Style="{StaticResource labelForHeader4}"
                             Text="Email" />
                         <Image
                             Margin="0,0,10,0"
