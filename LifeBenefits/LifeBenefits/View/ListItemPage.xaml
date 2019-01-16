@@ -4,7 +4,8 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
-    Title="Provider Search Results">
+    Title="Provider Search Results"
+    BackgroundColor="White">
 
     <ContentPage.Content>
         <Grid>
@@ -72,15 +73,15 @@
                 <SearchBar Placeholder="Filter Items" />
                 <ListView
                     x:Name="list"
-                    Margin="0,10,0,0"
+                    Margin="10,10,0,0"
                     CachingStrategy="RecycleElement"
-                    ItemTapped="list_ItemTapped"
-                    RowHeight="85">
+                    HasUnevenRows="True"
+                    ItemTapped="list_ItemTapped">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
-                                <StackLayout
-                                    Margin="10,0,8,0"
+                                <!--<StackLayout
+                                    Padding="5,10,2,10"
                                     BackgroundColor="Transparent"
                                     Orientation="Horizontal">
                                     <controls:CircleImage
@@ -119,7 +120,50 @@
                                                 TextColor="Gray" />
                                         </StackLayout>
                                     </StackLayout>
-                                </StackLayout>
+                                </StackLayout>-->
+                                <Grid Padding="0,10,0,10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="5*" />
+                                    </Grid.ColumnDefinitions>
+                                    <controls:CircleImage
+                                        Grid.Column="0"
+                                        Aspect="AspectFit"
+                                        BorderColor="White"
+                                        BorderThickness="1"
+                                        HeightRequest="50"
+                                        Source="profileIcon.png"
+                                        WidthRequest="50" />
+                                    <StackLayout Grid.Column="1" VerticalOptions="Center">
+                                        <Label
+                                            LineBreakMode="TailTruncation"
+                                            Style="{StaticResource labelForListItemTitle}"
+                                            Text="{Binding Name}"
+                                            TextColor="Black" />
+                                        <StackLayout Orientation="Horizontal">
+                                            <Image
+                                                HeightRequest="15"
+                                                Source="phone"
+                                                WidthRequest="15" />
+                                            <Label
+                                                LineBreakMode="TailTruncation"
+                                                Style="{StaticResource labelForListSubItemTitle1}"
+                                                Text="{Binding Phone}"
+                                                TextColor="Gray" />
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal">
+                                            <Image
+                                                HeightRequest="20"
+                                                Source="marker"
+                                                WidthRequest="20" />
+                                            <Label
+                                                LineBreakMode="TailTruncation"
+                                                Style="{StaticResource labelForListSubItemTitle2}"
+                                                Text="{Binding Address}"
+                                                TextColor="Gray" />
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Grid>
                             </ViewCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>
