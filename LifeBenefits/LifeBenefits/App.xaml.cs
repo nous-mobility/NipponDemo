@@ -25,7 +25,10 @@ namespace LifeBenefits
         protected override void OnStart()
         {
             // Handle the Analytics and Crash reports on Microsoft Visual studio app center
-            AppCenter.Start("ios=5d0c5fb3-ff1d-48dc-9a98-74d15374a2db;" + "android=52d9953e-1d3a-4b2a-88db-f7ccbcc5f0fb;", typeof(Analytics), typeof(Crashes));
+            //AppCenter.Start("ios=5d0c5fb3-ff1d-48dc-9a98-74d15374a2db;" + "android=52d9953e-1d3a-4b2a-88db-f7ccbcc5f0fb;", typeof(Analytics), typeof(Crashes));
+
+            // New account
+            AppCenter.Start("ios=9ef19da1-a087-4a13-9659-1a5a80a12b2c;" + "android=fe8b1d02-3569-4797-b5a2-8d5ff3520401;", typeof(Analytics), typeof(Crashes));
         }
 
         protected override void OnSleep()
