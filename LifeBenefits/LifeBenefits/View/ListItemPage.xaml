@@ -80,47 +80,6 @@
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
-                                <!--<StackLayout
-                                    Padding="5,10,2,10"
-                                    BackgroundColor="Transparent"
-                                    Orientation="Horizontal">
-                                    <controls:CircleImage
-                                        Aspect="AspectFill"
-                                        BorderColor="White"
-                                        BorderThickness="1"
-                                        HeightRequest="50"
-                                        Source="profileIcon.png"
-                                        WidthRequest="50" />
-                                    <StackLayout Margin="5,0,0,0" VerticalOptions="Center">
-                                        <Label
-                                            LineBreakMode="TailTruncation"
-                                            Style="{StaticResource labelForListItemTitle}"
-                                            Text="{Binding Name}"
-                                            TextColor="Black" />
-                                        <StackLayout Orientation="Horizontal">
-                                            <Image
-                                                HeightRequest="15"
-                                                Source="phone"
-                                                WidthRequest="15" />
-                                            <Label
-                                                LineBreakMode="TailTruncation"
-                                                Style="{StaticResource labelForListSubItemTitle1}"
-                                                Text="{Binding Phone}"
-                                                TextColor="Gray" />
-                                        </StackLayout>
-                                        <StackLayout Orientation="Horizontal">
-                                            <Image
-                                                HeightRequest="20"
-                                                Source="marker"
-                                                WidthRequest="20" />
-                                            <Label
-                                                LineBreakMode="TailTruncation"
-                                                Style="{StaticResource labelForListSubItemTitle2}"
-                                                Text="{Binding Address}"
-                                                TextColor="Gray" />
-                                        </StackLayout>
-                                    </StackLayout>
-                                </StackLayout>-->
                                 <Grid Padding="0,10,0,10">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="*" />
