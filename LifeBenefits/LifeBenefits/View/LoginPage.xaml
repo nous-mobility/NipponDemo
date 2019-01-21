@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
     x:Class="LifeBenefits.View.LoginPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
@@ -49,6 +49,7 @@
                                 HorizontalOptions="FillAndExpand"
                                 IsVisible="{Binding IsBusy, Converter={StaticResource InverseBooleanConverter}}"
                                 Style="{StaticResource buttonHeight}"
+                                AutomationId="LblLogin"
                                 Text="Login"
                                 TextColor="White" />
                             <Frame
