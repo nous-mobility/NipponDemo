@@ -44,6 +44,7 @@
                                 <StackLayout Padding="10" Orientation="Horizontal">
                                     <Label
                                         Margin="10,0,0,0"
+                                        Style="{StaticResource labelForHeader2}"
                                         Text="{Binding Name}"
                                         TextColor="Black"
                                         VerticalTextAlignment="Center" />
