@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="LifeBenefits.View.SubmitQuestionPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Submit a Question"
+    BackgroundColor="#f2f2f2">
+    <ContentPage.Content>
+        <StackLayout x:Name="questionFrame">
+            <ScrollView>
+                <StackLayout
+                    x:Name="providerFrameSpacing"
+                    Margin="0,10,0,0"
+                    BackgroundColor="#fcfcfc"
+                    Spacing="20">
+                    <Label
+                        HorizontalOptions="EndAndExpand"
+                        Style="{StaticResource labelForHeader2}"
+                        Text="* Required fields"
+                        TextColor="#dc3619" />
+                    <StackLayout Spacing="1">
+                        <StackLayout Orientation="Horizontal">
+                            <Label
+                                Style="{StaticResource labelForHeader2}"
+                                Text="*"
+                                TextColor="#dc3619" />
+                            <Label
+                                Style="{StaticResource labelForHeader2}"
+                                Text="Name"
+                                TextColor="Black" />
+                        </StackLayout>
+                        <Frame Padding="5" BackgroundColor="White">
+                            <StackLayout Orientation="Horizontal">
+                                <Label
+                                    HorizontalOptions="CenterAndExpand"
+                                    Style="{StaticResource labelForHeader2}"
+                                    Text="John Doe" />
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Spacing="1">
+                        <StackLayout Orientation="Horizontal">
+                            <Label
+                                Style="{StaticResource labelForHeader2}"
+                                Text="*"
+                                TextColor="#dc3619" />
+                            <Label
+                                Style="{StaticResource labelForHeader2}"
+                                Text="Email"
+                                TextColor="Black" />
+                        </StackLayout>
+                        <Frame Padding="5" BackgroundColor="White">
+                            <StackLayout Orientation="Horizontal">
+                                <Label
+                                    HorizontalOptions="CenterAndExpand"
+                                    Style="{StaticResource labelForHeader2}"
+                                    Text="john.doe@domain.com" />
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Spacing="1">
+                        <StackLayout Orientation="Horizontal">
+                            <Label
+                                Style="{StaticResource labelForHeader2}"
+                                Text="*"
+                                TextColor="#dc3619" />
+                            <Label
+                                Style="{StaticResource labelForHeader2}"
+                                Text="Member ID"
+                                TextColor="Black" />
+                        </StackLayout>
+                        <Frame Padding="5" BackgroundColor="White">
+                            <StackLayout Orientation="Horizontal">
+                                <Label
+                                    HorizontalOptions="CenterAndExpand"
+                                    Style="{StaticResource labelForHeader2}"
+                                    Text="10152535" />
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Spacing="1">
+                        <StackLayout Orientation="Horizontal">
+                            <Label
+                                Style="{StaticResource labelForHeader2}"
+                                Text="*"
+                                TextColor="#dc3619" />
+                            <Label
+                                Style="{StaticResource labelForHeader2}"
+                                Text="Phone"
+                                TextColor="Black" />
+                        </StackLayout>
+                        <Frame Padding="5" BackgroundColor="White">
+                            <StackLayout Orientation="Horizontal">
+                                <Label
+                                    HorizontalOptions="CenterAndExpand"
+                                    Style="{StaticResource labelForHeader2}"
+                                    Text="+11 85146548" />
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Spacing="1">
+                        <StackLayout Orientation="Horizontal">
+                            <Label
+                                Style="{StaticResource labelForHeader2}"
+                                Text="*"
+                                TextColor="#dc3619" />
+                            <Label
+                                Style="{StaticResource labelForHeader2}"
+                                Text="Language"
+                                TextColor="Black" />
+                        </StackLayout>
+                        <Frame Padding="5" BackgroundColor="White">
+                            <StackLayout Orientation="Horizontal">
+                                <Label
+                                    x:Name="selectedText"
+                                    HorizontalOptions="CenterAndExpand"
+                                    Style="{StaticResource labelForHeader2}"
+                                    Text="Select" />
+                                <Image
+                                    Margin="0,0,5,0"
+                                    HeightRequest="18"
+                                    HorizontalOptions="End"
+                                    Source="plus"
+                                    WidthRequest="18" />
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Spacing="1">
+                        <StackLayout Orientation="Horizontal">
+                            <Label
+                                Style="{StaticResource labelForHeader2}"
+                                Text="*"
+                                TextColor="#dc3619" />
+                            <Label
+                                Style="{StaticResource labelForHeader2}"
+                                Text="Category"
+                                TextColor="Black" />
+                        </StackLayout>
+                        <Frame Padding="5" BackgroundColor="White">
+                            <StackLayout Orientation="Horizontal">
+                                <Label
+                                    HorizontalOptions="CenterAndExpand"
+                                    Style="{StaticResource labelForHeader2}"
+                                    Text="Select" />
+                                <Image
+                                    Margin="0,0,5,0"
+                                    HeightRequest="18"
+                                    HorizontalOptions="End"
+                                    Source="plus"
+                                    WidthRequest="18" />
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Spacing="1">
+                        <StackLayout Orientation="Horizontal">
+                            <Label
+                                Style="{StaticResource labelForHeader2}"
+                                Text="*"
+                                TextColor="#dc3619" />
+                            <Label
+                                Style="{StaticResource labelForHeader2}"
+                                Text="Location"
+                                TextColor="Black" />
+                        </StackLayout>
+                        <Frame Padding="5" BackgroundColor="White">
+                            <StackLayout Orientation="Horizontal">
+                                <Label
+                                    HorizontalOptions="CenterAndExpand"
+                                    Style="{StaticResource labelForHeader2}"
+                                    Text="Current Location" />
+                                <Image
+                                    Margin="0,0,5,0"
+                                    HeightRequest="18"
+                                    HorizontalOptions="End"
+                                    Source="plus"
+                                    WidthRequest="18" />
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Spacing="1">
+                        <StackLayout Orientation="Horizontal">
+                            <Label
+                                Style="{StaticResource labelForHeader2}"
+                                Text="*"
+                                TextColor="#dc3619" />
+                            <Label
+                                Style="{StaticResource labelForHeader2}"
+                                Text="Distance"
+                                TextColor="Black" />
+                        </StackLayout>
+                        <Frame Padding="5" BackgroundColor="White">
+                            <StackLayout Orientation="Horizontal">
+                                <Label
+                                    HorizontalOptions="CenterAndExpand"
+                                    Style="{StaticResource labelForHeader2}"
+                                    Text="Within 10 miles" />
+                                <Image
+                                    Margin="0,0,5,0"
+                                    HeightRequest="18"
+                                    HorizontalOptions="End"
+                                    Source="plus"
+                                    WidthRequest="18" />
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                    <Button
+                        Margin="0,10,0,0"
+                        BackgroundColor="#dc3619"
+                        Clicked="Button_Clicked"
+                        HorizontalOptions="Center"
+                        Style="{StaticResource buttonHeight}"
+                        Text="Submit"
+                        TextColor="White">
+                        <Button.Padding>
+                            <OnPlatform x:TypeArguments="Thickness">
+                                <On Platform="Android" Value="0" />
+                                <On Platform="iOS" Value="8, 2, 8, 2" />
+                            </OnPlatform>
+                        </Button.Padding>
+                    </Button>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

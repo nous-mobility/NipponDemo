@@ -50,6 +50,7 @@
                 Margin="0,10,0,0"
                 Padding="8,0,8,0"
                 BackgroundColor="#dc3619"
+                Clicked="Button_Clicked"
                 HorizontalOptions="Center"
                 Style="{StaticResource buttonHeight}"
                 Text="Submit a Question"

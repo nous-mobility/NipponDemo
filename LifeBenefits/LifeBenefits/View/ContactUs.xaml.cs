@@ -30,5 +30,13 @@ namespace LifeBenefits.View
                 });
             }
         }
-	}
+
+        private void Button_Clicked(object sender, System.EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(App.UserId))
+            {
+                Navigation.PushAsync(new SubmitQuestionPage());
+            }
+        }
+    }
 }
