@@ -20,11 +20,13 @@ namespace LifeBenefits.View
             {
                 questionFrame.Margin = new Thickness(70, 0, 70, 0);
                 providerFrameSpacing.Padding = new Thickness(18, 18, 18, 20);
+                editor.HeightRequest = 150;
             }
             else
             {
                 questionFrame.Margin = new Thickness(6, 0, 6, 0);
                 providerFrameSpacing.Padding = new Thickness(12, 12, 12, 15);
+                editor.HeightRequest = 80;
             }
         }
 

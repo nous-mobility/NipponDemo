@@ -29,7 +29,7 @@
                                 Text="Name"
                                 TextColor="Black" />
                         </StackLayout>
-                        <Frame Padding="5" BackgroundColor="White">
+                        <Frame Padding="5" BackgroundColor="#f2f2f2">
                             <StackLayout Orientation="Horizontal">
                                 <Label
                                     HorizontalOptions="CenterAndExpand"
@@ -49,7 +49,7 @@
                                 Text="Email"
                                 TextColor="Black" />
                         </StackLayout>
-                        <Frame Padding="5" BackgroundColor="White">
+                        <Frame Padding="5" BackgroundColor="#f2f2f2">
                             <StackLayout Orientation="Horizontal">
                                 <Label
                                     HorizontalOptions="CenterAndExpand"
@@ -69,7 +69,7 @@
                                 Text="Member ID"
                                 TextColor="Black" />
                         </StackLayout>
-                        <Frame Padding="5" BackgroundColor="White">
+                        <Frame Padding="5" BackgroundColor="#f2f2f2">
                             <StackLayout Orientation="Horizontal">
                                 <Label
                                     HorizontalOptions="CenterAndExpand"
@@ -152,55 +152,12 @@
                         </Frame>
                     </StackLayout>
                     <StackLayout Spacing="1">
-                        <StackLayout Orientation="Horizontal">
-                            <Label
-                                Style="{StaticResource labelForHeader2}"
-                                Text="*"
-                                TextColor="#dc3619" />
-                            <Label
-                                Style="{StaticResource labelForHeader2}"
-                                Text="Location"
-                                TextColor="Black" />
-                        </StackLayout>
+                        <Label
+                            Style="{StaticResource labelForHeader2}"
+                            Text="Note"
+                            TextColor="Black" />
                         <Frame Padding="5" BackgroundColor="White">
-                            <StackLayout Orientation="Horizontal">
-                                <Label
-                                    HorizontalOptions="CenterAndExpand"
-                                    Style="{StaticResource labelForHeader2}"
-                                    Text="Current Location" />
-                                <Image
-                                    Margin="0,0,5,0"
-                                    HeightRequest="18"
-                                    HorizontalOptions="End"
-                                    Source="plus"
-                                    WidthRequest="18" />
-                            </StackLayout>
-                        </Frame>
-                    </StackLayout>
-                    <StackLayout Spacing="1">
-                        <StackLayout Orientation="Horizontal">
-                            <Label
-                                Style="{StaticResource labelForHeader2}"
-                                Text="*"
-                                TextColor="#dc3619" />
-                            <Label
-                                Style="{StaticResource labelForHeader2}"
-                                Text="Distance"
-                                TextColor="Black" />
-                        </StackLayout>
-                        <Frame Padding="5" BackgroundColor="White">
-                            <StackLayout Orientation="Horizontal">
-                                <Label
-                                    HorizontalOptions="CenterAndExpand"
-                                    Style="{StaticResource labelForHeader2}"
-                                    Text="Within 10 miles" />
-                                <Image
-                                    Margin="0,0,5,0"
-                                    HeightRequest="18"
-                                    HorizontalOptions="End"
-                                    Source="plus"
-                                    WidthRequest="18" />
-                            </StackLayout>
+                            <Editor x:Name="editor" Placeholder="Write your note..." />
                         </Frame>
                     </StackLayout>
                     <Button
