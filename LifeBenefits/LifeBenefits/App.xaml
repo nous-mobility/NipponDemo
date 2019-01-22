@@ -54,7 +54,7 @@
                 x:Key="listItemSubTitle2LabelSize"
                 x:TypeArguments="x:Double"
                 Phone="12"
-                Tablet="15" />
+                Tablet="18" />
             <Style x:Key="labelForListSubItemTitle2" TargetType="Label">
                 <Setter Property="FontSize" Value="{StaticResource listItemSubTitle2LabelSize}" />
             </Style>

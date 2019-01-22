@@ -32,6 +32,14 @@ namespace LifeBenefits.View
 
             switch (item.Name)
             {
+                case "Home":
+                    var mainPage = new MasterDetailPage()
+                    {
+                        Master = new MasterPage() { Title = "Nippon", Icon = "slideout.png" },
+                        Detail = new NavigationPage(new MainMenuPage())
+                    };
+                    Application.Current.MainPage = mainPage;
+                    break;
                 case "Logout":
                     Application.Current.MainPage = new NavigationPage(new LoginPage());
                     Analytics.TrackEvent("Authentication", new Dictionary<string, string> {
