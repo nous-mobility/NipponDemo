@@ -13,11 +13,22 @@
                     Margin="0,10,0,0"
                     BackgroundColor="#fcfcfc"
                     Spacing="20">
+                    <Label
+                        HorizontalOptions="EndAndExpand"
+                        Style="{StaticResource labelForHeader2}"
+                        Text="* Required fields"
+                        TextColor="#dc3619" />
                     <StackLayout Spacing="1">
-                        <Label
-                            Style="{StaticResource labelForHeader2}"
-                            Text="Network"
-                            TextColor="Black" />
+                        <StackLayout Orientation="Horizontal">
+                            <Label
+                                Style="{StaticResource labelForHeader2}"
+                                Text="*"
+                                TextColor="#dc3619" />
+                            <Label
+                                Style="{StaticResource labelForHeader2}"
+                                Text="Network"
+                                TextColor="Black" />
+                        </StackLayout>
                         <Frame Padding="5" BackgroundColor="White">
                             <StackLayout Orientation="Horizontal">
                                 <Label
@@ -28,10 +39,16 @@
                         </Frame>
                     </StackLayout>
                     <StackLayout Spacing="1">
-                        <Label
-                            Style="{StaticResource labelForHeader2}"
-                            Text="Provider Type"
-                            TextColor="Black" />
+                        <StackLayout Orientation="Horizontal">
+                            <Label
+                                Style="{StaticResource labelForHeader2}"
+                                Text="*"
+                                TextColor="#dc3619" />
+                            <Label
+                                Style="{StaticResource labelForHeader2}"
+                                Text="Provider Type"
+                                TextColor="Black" />
+                        </StackLayout>
                         <Frame Padding="5" BackgroundColor="White">
                             <StackLayout Orientation="Horizontal">
                                 <Label
@@ -52,10 +69,16 @@
                         </Frame>
                     </StackLayout>
                     <StackLayout Spacing="1">
-                        <Label
-                            Style="{StaticResource labelForHeader2}"
-                            Text="Speciality"
-                            TextColor="Black" />
+                        <StackLayout Orientation="Horizontal">
+                            <Label
+                                Style="{StaticResource labelForHeader2}"
+                                Text="*"
+                                TextColor="#dc3619" />
+                            <Label
+                                Style="{StaticResource labelForHeader2}"
+                                Text="Speciality"
+                                TextColor="Black" />
+                        </StackLayout>
                         <Frame Padding="5" BackgroundColor="White">
                             <StackLayout Orientation="Horizontal">
                                 <Label
@@ -72,10 +95,16 @@
                         </Frame>
                     </StackLayout>
                     <StackLayout Spacing="1">
-                        <Label
-                            Style="{StaticResource labelForHeader2}"
-                            Text="Location"
-                            TextColor="Black" />
+                        <StackLayout Orientation="Horizontal">
+                            <Label
+                                Style="{StaticResource labelForHeader2}"
+                                Text="*"
+                                TextColor="#dc3619" />
+                            <Label
+                                Style="{StaticResource labelForHeader2}"
+                                Text="Location"
+                                TextColor="Black" />
+                        </StackLayout>
                         <Frame Padding="5" BackgroundColor="White">
                             <StackLayout Orientation="Horizontal">
                                 <Label
@@ -92,10 +121,16 @@
                         </Frame>
                     </StackLayout>
                     <StackLayout Spacing="1">
-                        <Label
-                            Style="{StaticResource labelForHeader2}"
-                            Text="Distance"
-                            TextColor="Black" />
+                        <StackLayout Orientation="Horizontal">
+                            <Label
+                                Style="{StaticResource labelForHeader2}"
+                                Text="*"
+                                TextColor="#dc3619" />
+                            <Label
+                                Style="{StaticResource labelForHeader2}"
+                                Text="Distance"
+                                TextColor="Black" />
+                        </StackLayout>
                         <Frame Padding="5" BackgroundColor="White">
                             <StackLayout Orientation="Horizontal">
                                 <Label
