@@ -16,7 +16,7 @@
                 Style="{StaticResource buttonHeight}"
                 Text="Email"
                 TextColor="White" />
-            <local:PinchToZoomContainer>
+            <!--<local:PinchToZoomContainer>
                 <local:PinchToZoomContainer.Content>
                     <Image
                         Aspect="AspectFit"
@@ -24,7 +24,14 @@
                         Source="sampleIdCard.png"
                         VerticalOptions="FillAndExpand" />
                 </local:PinchToZoomContainer.Content>
-            </local:PinchToZoomContainer>
+            </local:PinchToZoomContainer>-->
+            <local:PinchToZoomScrollContainer>
+                <Image
+                    Aspect="AspectFit"
+                    HorizontalOptions="FillAndExpand"
+                    Source="sampleIdCard.png"
+                    VerticalOptions="FillAndExpand" />
+            </local:PinchToZoomScrollContainer>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
