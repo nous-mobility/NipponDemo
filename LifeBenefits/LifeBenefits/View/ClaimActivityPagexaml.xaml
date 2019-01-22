@@ -5,13 +5,19 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:customControl="clr-namespace:LifeBenefits.CustomControl"
     xmlns:xe="clr-namespace:XamEffects;assembly=XamEffects"
-    Title="Claim Activity">
+    Title="Claim Activity"
+    BackgroundColor="#f2f2f2">
     <ContentPage.Content>
-        <StackLayout>
-            <SearchBar Placeholder="Filter Items" />
+        <StackLayout Padding="6,6,6,0">
+            <SearchBar BackgroundColor="White" Placeholder="Filter Items" />
+            <Label
+                HorizontalOptions="StartAndExpand"
+                Style="{StaticResource labelForHeader}"
+                Text="Claims Data will reference claimspaid within most recent 18 months, for more history go to our website"
+                TextColor="Black" />
             <ListView
                 x:Name="list"
-                Margin="0,10,0,0"
+                Margin="0,5,0,0"
                 CachingStrategy="RecycleElement"
                 HasUnevenRows="true">
                 <ListView.ItemTemplate>
