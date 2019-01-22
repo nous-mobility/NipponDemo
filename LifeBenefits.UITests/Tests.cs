@@ -23,31 +23,19 @@ namespace LifeBenefits.UITests
         }
 
         [Test]
-        public void ValidateLauncherTextLabels()
+        public void ValidateLoginScreenLabels()
         {
             Assert.NotNull(app.Query(c => c.Marked("LblFindProvider")).FirstOrDefault());
-            // Test the the element contains the proper value
+            // Test if the the element contains proper value
             Assert.AreEqual("Find a Provider", app.Query(c => c.Marked("LblFindProvider")).First().Text);
-
-            Assert.NotNull(app.Query(c => c.Marked("LblWellnessPortal")).FirstOrDefault());
-            // Test the the element contains the proper value
-            Assert.AreEqual("Wellness Portal", app.Query(c => c.Marked("LblWellnessPortal")).First().Text);
-
-            Assert.NotNull(app.Query(c => c.Marked("LblClaimActivity")).FirstOrDefault());
-            // Test the the element contains the proper value
-            Assert.AreEqual("Claim Activity", app.Query(c => c.Marked("LblClaimActivity")).First().Text);
-
-            Assert.NotNull(app.Query(c => c.Marked("LblBenefits")).FirstOrDefault());
-            // Test the the element contains the proper value
-            Assert.AreEqual("Benefits", app.Query(c => c.Marked("LblBenefits")).First().Text);
-
-            Assert.NotNull(app.Query(c => c.Marked("LblIdCard")).FirstOrDefault());
-            // Test the the element contains the proper value
-            Assert.AreEqual("ID Card", app.Query(c => c.Marked("LblIdCard")).First().Text);
 
             Assert.NotNull(app.Query(c => c.Marked("LblContactUs")).FirstOrDefault());
             // Test the the element contains the proper value
             Assert.AreEqual("Contact Us", app.Query(c => c.Marked("LblContactUs")).First().Text);
+
+            Assert.NotNull(app.Query(c => c.Marked("LblLogin")).FirstOrDefault());
+            // Test if the the element contains proper value
+            Assert.AreEqual("Login", app.Query(c => c.Marked("LblLogin")).First().Text);
         }
     }
 }
