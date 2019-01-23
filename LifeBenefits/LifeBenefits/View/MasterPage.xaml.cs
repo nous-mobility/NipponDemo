@@ -33,11 +33,14 @@ namespace LifeBenefits.View
             switch (item.Name)
             {
                 case "Home":
-                    var mainPage = new MasterDetailPage()
-                    {
-                        Master = new MasterPage() { Title = "Nippon", Icon = "slideout.png" },
-                        Detail = new NavigationPage(new MainMenuPage())
-                    };
+                    var mainPage = new MasterDetailPage();
+                    mainPage.Master = new MasterPage() { Title = "Nippon", Icon = "slideout.png" };
+
+                    if (Device.Idiom == TargetIdiom.Tablet)
+                        mainPage.Detail = new NavigationPage(new MainMenuTabletPage());
+                    else
+                        mainPage.Detail = new NavigationPage(new MainMenuPage());
+
                     Application.Current.MainPage = mainPage;
                     break;
                 case "Logout":

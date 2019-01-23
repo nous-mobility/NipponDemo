@@ -37,6 +37,8 @@ namespace LifeBenefits.View
             {
                 Navigation.PushAsync(new SubmitQuestionPage());
             }
+            else
+                DisplayAlert("Alert", "Please Login to submit a question", "OK");
         }
     }
 }

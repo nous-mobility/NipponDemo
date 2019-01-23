@@ -91,7 +91,7 @@ namespace LifeBenefits.ViewModel
         async private void DoLogin(object obj)
         {
             IsBusy = true;
-            await Task.Delay(3000);
+            await Task.Delay(2000);
             IsBusy = false;
 
             //Navigate to MainPage without Pin Code Authentication
@@ -104,7 +104,7 @@ namespace LifeBenefits.ViewModel
                     { "Login", "Sucess" }
                 });
         }
-        private void ConfirmPinCode(object obj)
+        async private void ConfirmPinCode(object obj)
         {
             NavigateToMainPage();
             Analytics.TrackEvent("Authentication", new Dictionary<string, string> {
@@ -114,11 +114,14 @@ namespace LifeBenefits.ViewModel
 
         private void NavigateToMainPage()
         {
-            var mainPage = new MasterDetailPage()
-            {
-                Master = new MasterPage() { Title = "Nippon", Icon = "slideout.png" },
-                Detail = new NavigationPage(new MainMenuPage())
-            };
+            var mainPage = new MasterDetailPage();
+            mainPage.Master = new MasterPage() { Title = "Nippon", Icon = "slideout.png" };
+
+            if (Device.Idiom == TargetIdiom.Tablet)
+                mainPage.Detail = new NavigationPage(new MainMenuTabletPage());
+            else
+                mainPage.Detail = new NavigationPage(new MainMenuPage());
+
             Application.Current.MainPage = mainPage;
 
             App.UserId = UserId;
