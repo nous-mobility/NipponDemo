@@ -12,15 +12,6 @@ namespace LifeBenefits.View
 		{
 			InitializeComponent ();
 
-            if (Device.Idiom == TargetIdiom.Tablet)
-            {
-                contactUsFrame.Margin = new Thickness(70, 0, 70, 0);
-            }
-            else
-            {
-                contactUsFrame.Margin = new Thickness(6, 0, 6, 0);
-            }
-
             if (string.IsNullOrEmpty(App.UserId))
             {
                 //Analytics to update user without login 

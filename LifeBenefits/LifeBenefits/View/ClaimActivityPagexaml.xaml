@@ -8,7 +8,7 @@
     Title="Claim Activity"
     BackgroundColor="#f2f2f2">
     <ContentPage.Content>
-        <StackLayout x:Name="claimActivityFrame">
+        <StackLayout x:Name="claimActivityFrame" Padding="6,6,6,0">
             <SearchBar BackgroundColor="White" Placeholder="Filter Items" />
             <Label
                 HorizontalOptions="StartAndExpand"

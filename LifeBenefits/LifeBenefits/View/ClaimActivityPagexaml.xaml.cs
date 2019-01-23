@@ -18,15 +18,6 @@ namespace LifeBenefits.View
 			InitializeComponent ();
             DeserializeJsonData();
             list.ItemsSource = tempdata;
-
-            if (Device.Idiom == TargetIdiom.Tablet)
-            {
-                claimActivityFrame.Padding = new Thickness(12, 12, 12, 0);
-            }
-            else
-            {
-                claimActivityFrame.Padding = new Thickness(6, 6, 6, 0);
-            }
         }
 
         private void DeserializeJsonData()

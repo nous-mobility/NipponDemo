@@ -6,7 +6,7 @@
     Title="Submit a Question"
     BackgroundColor="#f2f2f2">
     <ContentPage.Content>
-        <StackLayout x:Name="questionFrame">
+        <StackLayout x:Name="questionFrame" Margin="6,0,6,0">
             <ScrollView>
                 <StackLayout
                     x:Name="providerFrameSpacing"

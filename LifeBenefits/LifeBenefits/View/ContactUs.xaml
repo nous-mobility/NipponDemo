@@ -6,7 +6,10 @@
     Title="Contact Us"
     BackgroundColor="#f2f2f2">
     <ContentPage.Content>
-        <StackLayout x:Name="contactUsFrame" Padding="10">
+        <StackLayout
+            x:Name="contactUsFrame"
+            Margin="6,0,6,0"
+            Padding="10">
             <Frame Padding="0" BackgroundColor="White">
                 <StackLayout>
                     <StackLayout Padding="5,4,0,2" Orientation="Horizontal">

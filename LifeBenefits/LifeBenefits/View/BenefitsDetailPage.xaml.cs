@@ -19,15 +19,6 @@ namespace LifeBenefits.View
             this.Title = title;
             isExpanded = true;
             expnandImage.Source = "minus";
-
-            if (Device.Idiom == TargetIdiom.Tablet)
-            {
-                benefitsDetailFrame.Margin = new Thickness(70, 0, 70, 0);
-            }
-            else
-            {
-                benefitsDetailFrame.Margin = new Thickness(6, 0, 6, 0);
-            }
         }
 
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)

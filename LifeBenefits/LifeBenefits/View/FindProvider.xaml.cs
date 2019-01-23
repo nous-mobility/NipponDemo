@@ -23,7 +23,7 @@ namespace LifeBenefits.View
 
             if (Device.Idiom == TargetIdiom.Tablet)
             {
-                findProviderFrame.Margin = new Thickness(70, 0, 70, 0);
+                findProviderFrame.Margin = new Thickness(8, 0, 8, 0);
                 providerFrameSpacing.Padding = new Thickness(18,18,18,20);
             }
             else
