@@ -104,7 +104,7 @@ namespace LifeBenefits.ViewModel
                     { "Login", "Sucess" }
                 });
         }
-        async private void ConfirmPinCode(object obj)
+        private void ConfirmPinCode(object obj)
         {
             NavigateToMainPage();
             Analytics.TrackEvent("Authentication", new Dictionary<string, string> {
