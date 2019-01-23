@@ -53,20 +53,20 @@ namespace LifeBenefits.View
             filterStatus = !filterStatus;
             HideShowFilterPanel(filterStatus);
         }
-        private async void HideShowFilterPanel(bool show)
+        private void HideShowFilterPanel(bool show)
         {
-            if (show)
-            {
-                await filterPanel.ScaleTo(1.0f, 100, Easing.CubicIn);
-                //await filterPanel.FadeTo(1.0f, 100);
-                filterPanel.IsVisible = true;
-            }
-            else
-            {
-                await filterPanel.ScaleTo(0.0f, 0, Easing.CubicOut);
-                //await filterPanel.FadeTo(0.0f);
-                filterPanel.IsVisible = false;
-            }
+                if (show)
+                {
+                    //await filterPanel.ScaleTo(1.0, 100, Easing.CubicIn);
+                    //await filterPanel.FadeTo(1.0f, 100);
+                    filterPanel.IsVisible = true;
+                }
+                else
+                {
+                    //await filterPanel.ScaleTo(0.0, 0, Easing.CubicOut);
+                    //await filterPanel.FadeTo(0.0f);
+                    filterPanel.IsVisible = false;
+                }
         }
         private void AllFilter_Tapped(object sender, EventArgs e)
         {
