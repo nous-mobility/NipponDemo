@@ -207,7 +207,7 @@
                             AutomationId="LblFindProvider"
                             HorizontalOptions="Center"
                             Style="{StaticResource labelForHeader}"
-                            Text="Find a Provider"
+                            Text="Find Provider"
                             TextColor="White"
                             VerticalOptions="End" />
                     </StackLayout>
