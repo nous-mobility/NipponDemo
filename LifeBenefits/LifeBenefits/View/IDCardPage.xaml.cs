@@ -16,5 +16,10 @@ namespace LifeBenefits.View
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void Slider_ValueChanged(object sender, ValueChangedEventArgs e)
+        {
+
+        }
+    }
 }
