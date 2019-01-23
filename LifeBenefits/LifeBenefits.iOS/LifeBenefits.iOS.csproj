@@ -220,4 +220,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\menu.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\sampleIdCard%402x.png" />
+  </ItemGroup>
 </Project>
