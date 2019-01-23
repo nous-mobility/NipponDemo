@@ -189,10 +189,20 @@
                     xe:TouchEffect.Color="Red"
                     BackgroundColor="#a5a6a5">
                     <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
-                        <Image
-                            HeightRequest="48"
-                            Source="doc"
-                            WidthRequest="48" />
+                        <Image Source="doc">
+                            <Image.WidthRequest>
+                                <OnIdiom
+                                    x:TypeArguments="x:Double"
+                                    Phone="48"
+                                    Tablet="56" />
+                            </Image.WidthRequest>
+                            <Image.HeightRequest>
+                                <OnIdiom
+                                    x:TypeArguments="x:Double"
+                                    Phone="48"
+                                    Tablet="56" />
+                            </Image.HeightRequest>
+                        </Image>
                         <Label
                             AutomationId="LblFindProvider"
                             HorizontalOptions="Center"
@@ -209,10 +219,20 @@
                     xe:TouchEffect.Color="Red"
                     BackgroundColor="#a5a6a5">
                     <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
-                        <Image
-                            HeightRequest="48"
-                            Source="contact"
-                            WidthRequest="48" />
+                        <Image Source="contact">
+                            <Image.WidthRequest>
+                                <OnIdiom
+                                    x:TypeArguments="x:Double"
+                                    Phone="48"
+                                    Tablet="56" />
+                            </Image.WidthRequest>
+                            <Image.HeightRequest>
+                                <OnIdiom
+                                    x:TypeArguments="x:Double"
+                                    Phone="48"
+                                    Tablet="56" />
+                            </Image.HeightRequest>
+                        </Image>
                         <Label
                             AutomationId="LblContactUs"
                             HorizontalOptions="Center"

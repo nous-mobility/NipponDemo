@@ -50,9 +50,9 @@
                     BackgroundColor="#a5a6a5">
                     <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
                         <Image
-                            HeightRequest="48"
+                            HeightRequest="56"
                             Source="doc"
-                            WidthRequest="48" />
+                            WidthRequest="56" />
                         <Label
                             AutomationId="LblFindProvider"
                             HorizontalOptions="Center"
@@ -71,9 +71,9 @@
                     BackgroundColor="#a5a6a5">
                     <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
                         <Image
-                            HeightRequest="48"
+                            HeightRequest="56"
                             Source="welllness"
-                            WidthRequest="48" />
+                            WidthRequest="56" />
                         <Label
                             AutomationId="LblWellnessPortal"
                             HorizontalOptions="Center"
@@ -92,9 +92,9 @@
                     BackgroundColor="#a5a6a5">
                     <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
                         <Image
-                            HeightRequest="48"
+                            HeightRequest="56"
                             Source="claim"
-                            WidthRequest="48" />
+                            WidthRequest="56" />
                         <Label
                             AutomationId="LblClaimActivity"
                             HorizontalOptions="Center"
@@ -113,9 +113,9 @@
                     BackgroundColor="#a5a6a5">
                     <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
                         <Image
-                            HeightRequest="48"
+                            HeightRequest="56"
                             Source="benifits"
-                            WidthRequest="48" />
+                            WidthRequest="56" />
                         <Label
                             AutomationId="LblBenefits"
                             HorizontalOptions="Center"
@@ -134,9 +134,9 @@
                     BackgroundColor="#a5a6a5">
                     <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
                         <Image
-                            HeightRequest="48"
+                            HeightRequest="56"
                             Source="idcard"
-                            WidthRequest="48" />
+                            WidthRequest="56" />
                         <Label
                             AutomationId="LblIdCard"
                             HorizontalOptions="Center"
@@ -155,9 +155,9 @@
                     BackgroundColor="#a5a6a5">
                     <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
                         <Image
-                            HeightRequest="48"
+                            HeightRequest="56"
                             Source="contact"
-                            WidthRequest="48" />
+                            WidthRequest="56" />
                         <Label
                             AutomationId="LblContactUs"
                             HorizontalOptions="Center"
