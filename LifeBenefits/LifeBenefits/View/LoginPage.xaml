@@ -4,6 +4,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:Converters="clr-namespace:LifeBenefits.Converters;assembly=LifeBenefits"
+    xmlns:resx="clr-namespace:LifeBenefits.Resources;assembly=LifeBenefits"
     xmlns:xe="clr-namespace:XamEffects;assembly=XamEffects"
     Title="Nippon Life Benefits"
     BackgroundColor="White">
@@ -51,7 +52,7 @@
                                 HorizontalOptions="FillAndExpand"
                                 IsVisible="{Binding IsBusy, Converter={StaticResource InverseBooleanConverter}}"
                                 Style="{StaticResource buttonHeight}"
-                                Text="Login"
+                                Text="{x:Static resx:AppResource.LoginButton}"
                                 TextColor="White" />
                             <Frame
                                 x:Name="loginProgress"
@@ -207,7 +208,7 @@
                             AutomationId="LblFindProvider"
                             HorizontalOptions="Center"
                             Style="{StaticResource labelForHeader}"
-                            Text="Find Provider"
+                            Text="{x:Static resx:AppResource.FindProvider}"
                             TextColor="White"
                             VerticalOptions="End" />
                     </StackLayout>
@@ -237,7 +238,7 @@
                             AutomationId="LblContactUs"
                             HorizontalOptions="Center"
                             Style="{StaticResource labelForHeader}"
-                            Text="Contact Us"
+                            Text="{x:Static resx:AppResource.ContactUs}"
                             TextColor="White"
                             VerticalOptions="End" />
                     </StackLayout>

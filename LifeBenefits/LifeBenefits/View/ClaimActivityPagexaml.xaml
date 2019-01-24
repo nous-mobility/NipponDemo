@@ -4,8 +4,9 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:customControl="clr-namespace:LifeBenefits.CustomControl"
+    xmlns:resx="clr-namespace:LifeBenefits.Resources;assembly=LifeBenefits"
     xmlns:xe="clr-namespace:XamEffects;assembly=XamEffects"
-    Title="Claim Activity"
+    Title="{x:Static resx:AppResource.ClaimActivity}"
     BackgroundColor="#f2f2f2">
     <ContentPage.Content>
         <StackLayout x:Name="claimActivityFrame" Padding="6,6,6,0">

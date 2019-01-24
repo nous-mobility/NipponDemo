@@ -3,6 +3,7 @@
     x:Class="LifeBenefits.View.SubmitQuestionPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:resx="clr-namespace:LifeBenefits.Resources;assembly=LifeBenefits"
     Title="Submit a Question"
     BackgroundColor="#f2f2f2">
     <ContentPage.Content>
@@ -172,7 +173,7 @@
                         Clicked="Button_Clicked"
                         HorizontalOptions="Center"
                         Style="{StaticResource buttonHeight}"
-                        Text="Submit"
+                        Text="{x:Static resx:AppResource.SubmitQuestionButton}"
                         TextColor="White">
                         <Button.Padding>
                             <OnPlatform x:TypeArguments="Thickness">

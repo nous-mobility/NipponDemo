@@ -3,7 +3,8 @@
     x:Class="LifeBenefits.View.FindProvider"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="Find a Provider"
+    xmlns:resx="clr-namespace:LifeBenefits.Resources;assembly=LifeBenefits"
+    Title="{x:Static resx:AppResource.FindProvider}"
     BackgroundColor="#f2f2f2">
     <ContentPage.Content>
         <AbsoluteLayout x:Name="findProviderFrame">
@@ -152,7 +153,7 @@
                         Clicked="Button_Clicked"
                         HorizontalOptions="Center"
                         Style="{StaticResource buttonHeight}"
-                        Text="Search"
+                        Text="{x:Static resx:AppResource.SearchButton}"
                         TextColor="White">
                         <Button.Padding>
                             <OnPlatform x:TypeArguments="Thickness">

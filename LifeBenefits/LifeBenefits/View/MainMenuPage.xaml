@@ -3,6 +3,7 @@
     x:Class="LifeBenefits.View.MainMenuPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:resx="clr-namespace:LifeBenefits.Resources;assembly=LifeBenefits"
     xmlns:xe="clr-namespace:XamEffects;assembly=XamEffects"
     Title="Nippon Life Benefits Demo">
     <ContentPage.Content>
@@ -56,7 +57,7 @@
                             AutomationId="LblFindProvider"
                             HorizontalOptions="Center"
                             Style="{StaticResource labelForHeader}"
-                            Text="Find a Provider"
+                            Text="{x:Static resx:AppResource.FindProvider}"
                             TextColor="White"
                             VerticalOptions="End" />
                     </StackLayout>
@@ -77,7 +78,7 @@
                             AutomationId="LblWellnessPortal"
                             HorizontalOptions="Center"
                             Style="{StaticResource labelForHeader}"
-                            Text="Wellness Portal"
+                            Text="{x:Static resx:AppResource.WellnessPortal}"
                             TextColor="White"
                             VerticalOptions="End" />
                     </StackLayout>
@@ -98,7 +99,7 @@
                             AutomationId="LblClaimActivity"
                             HorizontalOptions="Center"
                             Style="{StaticResource labelForHeader}"
-                            Text="Claim Activity"
+                            Text="{x:Static resx:AppResource.ClaimActivity}"
                             TextColor="White"
                             VerticalOptions="End" />
                     </StackLayout>
@@ -119,7 +120,7 @@
                             AutomationId="LblBenefits"
                             HorizontalOptions="Center"
                             Style="{StaticResource labelForHeader}"
-                            Text="Benefits"
+                            Text="{x:Static resx:AppResource.Benefits}"
                             TextColor="White"
                             VerticalOptions="End" />
                     </StackLayout>
@@ -140,7 +141,7 @@
                             AutomationId="LblIdCard"
                             HorizontalOptions="Center"
                             Style="{StaticResource labelForHeader}"
-                            Text="ID Card"
+                            Text="{x:Static resx:AppResource.IDCard}"
                             TextColor="White"
                             VerticalOptions="End" />
                     </StackLayout>
@@ -161,7 +162,7 @@
                             AutomationId="LblContactUs"
                             HorizontalOptions="Center"
                             Style="{StaticResource labelForHeader}"
-                            Text="Contact Us"
+                            Text="{x:Static resx:AppResource.ContactUs}"
                             TextColor="White"
                             VerticalOptions="End" />
                     </StackLayout>
