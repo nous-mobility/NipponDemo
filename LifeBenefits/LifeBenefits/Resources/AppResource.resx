@@ -134,7 +134,7 @@
     <comment>Email Button</comment>
   </data>
   <data name="FindProvider" xml:space="preserve">
-    <value>Find Provider</value>
+    <value>Find a Provider</value>
     <comment>Find Provider menu</comment>
   </data>
   <data name="IDCard" xml:space="preserve">
