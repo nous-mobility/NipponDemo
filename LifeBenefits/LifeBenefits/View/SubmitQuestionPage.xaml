@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
     x:Class="LifeBenefits.View.SubmitQuestionPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
@@ -169,18 +169,13 @@
                     </StackLayout>
                     <Button
                         Margin="0,10,0,0"
+                        Padding="8,2,8,2"
                         BackgroundColor="#dc3619"
                         Clicked="Button_Clicked"
                         HorizontalOptions="Center"
                         Style="{StaticResource buttonHeight}"
                         Text="{x:Static resx:AppResource.SubmitQuestionButton}"
                         TextColor="White">
-                        <Button.Padding>
-                            <OnPlatform x:TypeArguments="Thickness">
-                                <On Platform="Android" Value="0" />
-                                <On Platform="iOS" Value="8, 2, 8, 2" />
-                            </OnPlatform>
-                        </Button.Padding>
                     </Button>
                 </StackLayout>
             </ScrollView>

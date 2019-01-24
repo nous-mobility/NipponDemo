@@ -1,8 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
     x:Class="LifeBenefits.View.ContactUs"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:resx="clr-namespace:LifeBenefits.Resources;assembly=LifeBenefits"
     Title="Contact Us"
     BackgroundColor="#f2f2f2">
     <ContentPage.Content>
@@ -56,7 +57,7 @@
                 Clicked="Button_Clicked"
                 HorizontalOptions="Center"
                 Style="{StaticResource buttonHeight}"
-                Text="Submit a Question"
+                Text="{x:Static resx:AppResource.SubmitQuestionButton}"
                 TextColor="White" />
         </StackLayout>
     </ContentPage.Content>
