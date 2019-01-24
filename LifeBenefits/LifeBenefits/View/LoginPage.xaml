@@ -6,7 +6,7 @@
     xmlns:Converters="clr-namespace:LifeBenefits.Converters;assembly=LifeBenefits"
     xmlns:resx="clr-namespace:LifeBenefits.Resources;assembly=LifeBenefits"
     xmlns:xe="clr-namespace:XamEffects;assembly=XamEffects"
-    Title="Nippon Life Benefits"
+    Title="Nippon Life Benefits Demo"
     BackgroundColor="White">
 
     <ContentPage.Resources>
