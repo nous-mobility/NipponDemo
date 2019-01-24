@@ -5,7 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:Converters="clr-namespace:LifeBenefits.Converters;assembly=LifeBenefits"
     xmlns:xe="clr-namespace:XamEffects;assembly=XamEffects"
-    Title="Nippon Life Benefits"
+    Title="Nippon Life Benefits Demo"
     BackgroundColor="White">
 
     <ContentPage.Resources>
